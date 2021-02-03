@@ -1,6 +1,10 @@
 # MELI Scraper + CUIT fuzzy matching
 
-Implementación de un webscraper (`scrapy.py`) de articulos y vendedores en [Mercado Libre](https://www.mercadolibre.com.ar). La segunda parte (`process.py`) hace un streaming de la data crawleada e identifica CUITs usando la base de [Registro Nacional de Sociedades](https://www.argentina.gob.ar/justicia/registro-nacional-sociedades). Finalmente, identifica si el usuario en MELI es cliente.
+<p float="center">
+  <img src="static/logo.png"/>
+</p>
+
+Implementación de un webscraper (`scraper.py`) de vendedores en [Mercado Libre](https://www.mercadolibre.com.ar), con sus respectivas métricas y volumenes de venta. La segunda parte (`match.py`) hace un streaming de la data crawleada e identifica CUITs usando la base de [Registro Nacional de Sociedades](https://www.argentina.gob.ar/justicia/registro-nacional-sociedades). Finalmente, identifica si el usuario en MELI es cliente.
 
 ## Uso
 
