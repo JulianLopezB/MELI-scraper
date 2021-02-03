@@ -1,0 +1,706 @@
+2021-02-02 22:36:58,614  scrapy.utils.log   INFO  Scrapy 2.3.0 started (bot: scrapybot)
+2021-02-02 22:36:58,657  scrapy.utils.log   INFO  Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.4 (default, Aug 13 2019, 15:17:50) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Darwin-18.5.0-x86_64-i386-64bit
+2021-02-02 22:36:58,657  scrapy.utils.log  DEBUG  Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-02-02 22:36:58,666  scrapy.crawler   INFO  Overridden settings:
+{'CLOSESPIDER_TIMEOUT': 25200,
+ 'CONCURRENT_REQUESTS': 25,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 25,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'LOG_ENABLED': False,
+ 'LOG_LEVEL': 'INFO',
+ 'RETRY_HTTP_CODES': [403],
+ 'RETRY_TIMES': 10}
+2021-02-02 22:36:58,689  scrapy.extensions.telnet   INFO  Telnet Password: 3378a812ca846eb3
+2021-02-02 22:36:58,715  scrapy.middleware   INFO  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2021-02-02 22:36:58,781  scrapy.middleware   INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-02-02 22:36:58,785  scrapy.middleware   INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-02-02 22:36:58,786  scrapy.middleware   INFO  Enabled item pipelines:
+[]
+2021-02-02 22:36:58,786  scrapy.core.engine   INFO  Spider opened
+2021-02-02 22:36:58,790  scrapy.extensions.logstats   INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-02-02 22:36:58,793  scrapy.extensions.telnet   INFO  Telnet console listening on 127.0.0.1:6027
+2021-02-02 22:36:58,801    SPIDER   INFO  Crawling 401 categories
+2021-02-02 22:36:58,801    SPIDER   INFO  
+https://listado.mercadolibre.com.ar/electrodomesticos/climatizacion/
+https://listado.mercadolibre.com.ar/animales-mascotas/perros/
+https://listado.mercadolibre.com.ar/publicidad-promocion/
+https://celulares.mercadolibre.com.ar/lentes-realidad-virtual/
+https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/
+https://deportes.mercadolibre.com.ar/ropa-deportiva/
+https://videojuegos.mercadolibre.com.ar/accesorios-pc-gaming/
+https://inmuebles.mercadolibre.com.ar/oficinas/
+https://celulares.mercadolibre.com.ar/accesorios/
+https://servicios.mercadolibre.com.ar/oficinas/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/herramientas/
+https://listado.mercadolibre.com.ar/agro-generadores-energia/
+https://relojes.mercadolibre.com.ar/pulsometros-cronometros/
+https://juegos-juguetes.mercadolibre.com.ar/mesas-sillas-ninos/
+https://listado.mercadolibre.com.ar/insectos/
+https://tuning.mercadolibre.com.ar/performance/
+https://listado.mercadolibre.com.ar/otras-categorias/gift-cards/
+https://servicios.mercadolibre.com.ar/mascotas/
+https://listado.mercadolibre.com.ar/disfraces-cotillon-invitaciones-tarjetas/
+https://servicios.mercadolibre.com.ar/hogar-construccion/
+https://deportes.mercadolibre.com.ar/parapente/
+https://autos.mercadolibre.com.ar/repuestos/
+https://listado.mercadolibre.com.ar/eventos-a-beneficio/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/musica/
+https://ropa.mercadolibre.com.ar/lotes/
+https://deportes.mercadolibre.com.ar/esqui-snowboard/
+https://celulares.mercadolibre.com.ar/repuestos/
+https://listado.mercadolibre.com.ar/electrodomesticos/dispensadores-purificadores/
+https://computacion.mercadolibre.com.ar/accesorios-pc-gaming/
+https://listado.mercadolibre.com.ar/bebes/cuarto/
+https://electronica.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/suplementos-alimenticios/
+https://ropa.mercadolibre.com.ar/bermudas-shorts/
+https://listado.mercadolibre.com.ar/criptomonedas/
+https://vehiculos.mercadolibre.com.ar/autos-chocados-averiados/
+https://instrumentos.mercadolibre.com.ar/metronomos/
+https://listado.mercadolibre.com.ar/industrias-oficinas/industria-agropecuaria/otros/
+https://ropa.mercadolibre.com.ar/camisas/
+https://servicios.mercadolibre.com.ar/otros/
+https://vehiculos.mercadolibre.com.ar/accesorios/otros/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/mobiliario-cocinas/
+https://listado.mercadolibre.com.ar/libreria/
+https://listado.mercadolibre.com.ar/moldes-jabones/
+https://listado.mercadolibre.com.ar/bebes/bano/
+https://ropa.mercadolibre.com.ar/saquitos-sweaters-chalecos/
+https://computacion.mercadolibre.com.ar/proyectores-pantallas/
+https://instrumentos.mercadolibre.com.ar/pedales-accesorios/
+https://joyas.mercadolibre.com.ar/piedras-preciosas/
+https://instrumentos.mercadolibre.com.ar/teclados-pianos/
+https://coleccionables.mercadolibre.com.ar/filatelia/
+https://inmuebles.mercadolibre.com.ar/locales/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/construccion/
+https://ropa.mercadolibre.com.ar/remeras-musculosas-chombas/
+https://hogar.mercadolibre.com.ar/muebles/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/disfraces/
+https://inmuebles.mercadolibre.com.ar/ph/
+https://telefonia.mercadolibre.com.ar/handies-radiofrecuencia/
+https://camaras-digitales.mercadolibre.com.ar/lentes-filtros/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/masajes/
+https://listado.mercadolibre.com.ar/arte-artesanias/otros/
+https://autos.mercadolibre.com.ar/servicio-programado/
+https://listado.mercadolibre.com.ar/bebes/ropa-calzado/
+https://listado.mercadolibre.com.ar/industrias-oficinas/arquitectura-y-diseno/
+https://listado.mercadolibre.com.ar/esculturas/
+https://servicios.mercadolibre.com.ar/ropa-moda/
+https://deportes.mercadolibre.com.ar/golf/
+https://deportes.mercadolibre.com.ar/monopatines-scooters/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/otros/
+https://inmuebles.mercadolibre.com.ar/quintas/
+https://deportes.mercadolibre.com.ar/slackline/
+https://ropa.mercadolibre.com.ar/otros/
+https://electronica.mercadolibre.com.ar/video/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/otros/
+https://camaras-digitales.mercadolibre.com.ar/otros/
+https://deportes.mercadolibre.com.ar/artes-marciales-y-boxeo/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/medico/
+https://listado.mercadolibre.com.ar/equipamiento-comercios/
+https://computacion.mercadolibre.com.ar/conectividad-redes/
+https://listado.mercadolibre.com.ar/textil-calzado/
+https://joyas.mercadolibre.com.ar/otros/
+https://computacion.mercadolibre.com.ar/limpieza-pcs/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/terapias-alternativas/
+https://servicios.mercadolibre.com.ar/medicina-salud/
+https://inmuebles.mercadolibre.com.ar/camas-nauticas/
+https://vehiculos.mercadolibre.com.ar/maquinaria-agricola/
+https://joyas.mercadolibre.com.ar/plumas-lapiceras-lujo/
+https://computacion.mercadolibre.com.ar/monitores/
+https://ropa.mercadolibre.com.ar/polleras/
+https://ropa.mercadolibre.com.ar/ropa-danza-patinaje/
+https://joyas.mercadolibre.com.ar/piercings/
+https://motos.mercadolibre.com.ar/accesorios/
+https://inmuebles.mercadolibre.com.ar/terrenos-lotes/
+https://listado.mercadolibre.com.ar/agro-animales/
+https://ropa.mercadolibre.com.ar/deportiva/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/electrodomesticos-belleza/
+https://instrumentos.mercadolibre.com.ar/baterias-percusion/
+https://inmuebles.mercadolibre.com.ar/cocheras/
+https://deportes.mercadolibre.com.ar/surf-bodyboard/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/farmacia/
+https://listado.mercadolibre.com.ar/otras-categorias/adultos/
+https://listado.mercadolibre.com.ar/alimentos-bebidas/otros/
+https://deportes.mercadolibre.com.ar/pulsometros-cronometros/
+https://coleccionables.mercadolibre.com.ar/monedas-billetes/
+https://relojes.mercadolibre.com.ar/smartwatch/
+https://listado.mercadolibre.com.ar/repuestos-accesorios/
+https://listado.mercadolibre.com.ar/animales-mascotas/otros/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/cuidado-salud/
+https://listado.mercadolibre.com.ar/animales-mascotas/reptiles-anfibios/
+https://telefonia.mercadolibre.com.ar/ip/
+https://electronica.mercadolibre.com.ar/media-streaming/
+https://autos.mercadolibre.com.ar/coleccion/
+https://libros.mercadolibre.com.ar/otros/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-bebes/
+https://ropa.mercadolibre.com.ar/uniformes/
+https://listado.mercadolibre.com.ar/ortopedia/
+https://computacion.mercadolibre.com.ar/cajas-sobres-porta-cds/
+https://coleccionables.mercadolibre.com.ar/figuritas-albumes-cromos/
+https://juegos-juguetes.mercadolibre.com.ar/hobbies/
+https://listado.mercadolibre.com.ar/bebes/chupetes-mordillos/
+https://ropa.mercadolibre.com.ar/ropa-calzado-bebes/
+https://ropa.mercadolibre.com.ar/ropa-interior-y-de-dormir/
+https://coleccionables.mercadolibre.com.ar/coleccionables-deportes/
+https://deportes.mercadolibre.com.ar/tiro-deportivo/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/otros/
+https://deportes.mercadolibre.com.ar/montanismo-trekking/
+https://camaras-digitales.mercadolibre.com.ar/revelado-laboratorio/
+https://vehiculos.mercadolibre.com.ar/colectivos/
+https://hogar.mercadolibre.com.ar/jardines-exteriores/
+https://electronica.mercadolibre.com.ar/controles-remotos/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/barberia/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/series-tv/
+https://listado.mercadolibre.com.ar/animales-mascotas/conejos/
+https://instrumentos.mercadolibre.com.ar/microfonos-amplificadores/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/peliculas/
+https://inmuebles.mercadolibre.com.ar/casas/
+https://listado.mercadolibre.com.ar/piezas-llaveros/
+https://deportes.mercadolibre.com.ar/futbol/
+https://listado.mercadolibre.com.ar/animales-mascotas/gatos/
+https://ropa.mercadolibre.com.ar/camperas-tapados-trenchs/
+https://listado.mercadolibre.com.ar/frescos/
+https://juegos-juguetes.mercadolibre.com.ar/peluches/
+https://deportes.mercadolibre.com.ar/patin-gimnasia-danza/
+https://listado.mercadolibre.com.ar/pisos-revestimientos/
+https://instrumentos.mercadolibre.com.ar/instrumentos-viento/
+https://computacion.mercadolibre.com.ar/otros/
+https://servicios.mercadolibre.com.ar/imprenta/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/coleccion/
+https://listado.mercadolibre.com.ar/industrias-oficinas/uniformes/
+https://listado.mercadolibre.com.ar/gastronomia-hoteleria/
+https://instrumentos.mercadolibre.com.ar/parlantes-bafles/
+https://computacion.mercadolibre.com.ar/impresion/
+https://deportes.mercadolibre.com.ar/natacion/
+https://juegos-juguetes.mercadolibre.com.ar/props-photo-booths/
+https://juegos-juguetes.mercadolibre.com.ar/aire-libre-y-agua/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/cuidado-cabello/
+https://juegos-juguetes.mercadolibre.com.ar/instrumentos-musicales/
+https://deportes.mercadolibre.com.ar/basquet/
+https://juegos-juguetes.mercadolibre.com.ar/vehiculos-juguete/
+https://televisores.mercadolibre.com.ar/tvs/
+https://vehiculos.mercadolibre.com.ar/audio/
+https://listado.mercadolibre.com.ar/electrodomesticos/coccion/
+https://computacion.mercadolibre.com.ar/tablets-accesorios/
+https://listado.mercadolibre.com.ar/bebes/otros/
+https://coleccionables.mercadolibre.com.ar/militaria-afines/
+https://vehiculos.mercadolibre.com.ar/llantas/
+https://juegos-juguetes.mercadolibre.com.ar/juegos-agua-playa/
+https://camaras-digitales.mercadolibre.com.ar/camaras/
+https://telefonia.mercadolibre.com.ar/fija-e-inalambrica/
+https://computacion.mercadolibre.com.ar/software/
+https://joyas.mercadolibre.com.ar/insumos-joyeria/
+https://listado.mercadolibre.com.ar/bebes/higiene-cuidado/
+https://listado.mercadolibre.com.ar/pirotecnia/
+https://juegos-juguetes.mercadolibre.com.ar/casas-carpas-ninos/
+https://listado.mercadolibre.com.ar/electrodomesticos/otros/
+https://listado.mercadolibre.com.ar/otras-categorias/mangas-viento/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/otros/
+https://camaras-digitales.mercadolibre.com.ar/albumes-portarretratos/
+https://deportes.mercadolibre.com.ar/handball/
+https://inmuebles.mercadolibre.com.ar/tiempo-compartido/
+https://celulares.mercadolibre.com.ar/
+https://instrumentos.mercadolibre.com.ar/estudio-grabacion/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/deportivos/
+https://computacion.mercadolibre.com.ar/estabilizadores-ups/
+https://deportes.mercadolibre.com.ar/voley/
+https://vehiculos.mercadolibre.com.ar/limpieza/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/electricidad/
+https://hogar.mercadolibre.com.ar/cuidado-del-lavanderia/
+https://listado.mercadolibre.com.ar/animales-mascotas/aves/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-oficios/
+https://libros.mercadolibre.com.ar/revistas/
+https://vehiculos.mercadolibre.com.ar/repuestos-maquinaria-pesada/
+https://listado.mercadolibre.com.ar/embalaje-logistica/
+https://vehiculos.mercadolibre.com.ar/maquinaria-vial/
+https://listado.mercadolibre.com.ar/herramientas-industriale/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-bromas/
+https://listado.mercadolibre.com.ar/bebes/paseo/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/otros/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/depilacion/
+https://listado.mercadolibre.com.ar/bebes/corralitos/
+https://listado.mercadolibre.com.ar/hornos-crematorios/
+https://listado.mercadolibre.com.ar/exposiciones/
+https://bolsos.mercadolibre.com.ar/equipaje-carteras/
+https://juegos-juguetes.mercadolibre.com.ar/vehiculos-montables-ninos/
+https://listado.mercadolibre.com.ar/lavado/
+https://listado.mercadolibre.com.ar/arte-artesanias/arte/
+https://deportes.mercadolibre.com.ar/paintball/
+https://libros.mercadolibre.com.ar/libros/
+https://hogar.mercadolibre.com.ar/seguridad/
+https://listado.mercadolibre.com.ar/bebes/seguridad/
+https://electronica.mercadolibre.com.ar/pilas-cargadores-baterias/
+https://juegos-juguetes.mercadolibre.com.ar/bloques-construccion/
+https://listado.mercadolibre.com.ar/alimentos-bebidas/comestibles/
+https://listado.mercadolibre.com.ar/agro-insumos-agricolas/
+https://camaras-digitales.mercadolibre.com.ar/cables/
+https://joyas.mercadolibre.com.ar/exhibidores-joyeros/
+https://juegos-juguetes.mercadolibre.com.ar/espuma-serpentina-confeti/
+https://camaras-digitales.mercadolibre.com.ar/drones-accesorios/
+https://instrumentos.mercadolibre.com.ar/partituras-y-letras/
+https://juegos-juguetes.mercadolibre.com.ar/dibujo-pintura-manualidades/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/recitales/
+https://deportes.mercadolibre.com.ar/otros/
+https://deportes.mercadolibre.com.ar/hockey/
+https://ropa.mercadolibre.com.ar/vestidos/
+https://listado.mercadolibre.com.ar/cursos/
+https://servicios.mercadolibre.com.ar/cursos-clases/
+https://ropa.mercadolibre.com.ar/blusas/
+https://hogar.mercadolibre.com.ar/banos/
+https://deportes.mercadolibre.com.ar/wakeboard-esqui-acuatico/
+https://listado.mercadolibre.com.ar/insumos-ganaderos/
+https://servicios.mercadolibre.com.ar/tecnologia/
+https://listado.mercadolibre.com.ar/animales-mascotas/caballos/
+https://autos.mercadolibre.com.ar/
+https://electronica.mercadolibre.com.ar/componentes-electronicos/
+https://listado.mercadolibre.com.ar/disfraces-cotillon-souvenirs/
+https://listado.mercadolibre.com.ar/grafica-e-impresion/
+https://ropa.mercadolibre.com.ar/pantalones-jeans-joggings/
+https://listado.mercadolibre.com.ar/equipamiento-medic/
+https://listado.mercadolibre.com.ar/pequenos-electrodomesticos/
+https://vehiculos.mercadolibre.com.ar/motorhomes/
+https://deportes.mercadolibre.com.ar/skateboard/
+https://autos.mercadolibre.com.ar/accesorios-para-camiones/
+https://deportes.mercadolibre.com.ar/suplementos-shakers/
+https://joyas.mercadolibre.com.ar/relojes/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/cuidado-piel/
+https://vehiculos.mercadolibre.com.ar/gnc/
+https://vehiculos.mercadolibre.com.ar/nautica/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/higiene-personal/
+https://listado.mercadolibre.com.ar/agro-maquinas-herramientas/
+https://listado.mercadolibre.com.ar/espejos-venecitas/
+https://autos.mercadolibre.com.ar/accesorios/
+https://hogar.mercadolibre.com.ar/otros/
+https://hogar.mercadolibre.com.ar/cortinas-accesorios/
+https://juegos-juguetes.mercadolibre.com.ar/juegos-mesa-cartas/
+https://instrumentos.mercadolibre.com.ar/instrumentos-cuerdas/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/teatro/
+https://celulares.mercadolibre.com.ar/smartwatches-accesorios/
+https://deportes.mercadolibre.com.ar/futbol-americano/
+https://computacion.mercadolibre.com.ar/palms-handhelds/
+https://electronica.mercadolibre.com.ar/cables/
+https://listado.mercadolibre.com.ar/bebes/lactancia-alimentacion/
+https://camaras-digitales.mercadolibre.com.ar/accesorios/
+https://computacion.mercadolibre.com.ar/cables-hubs-usb/
+https://listado.mercadolibre.com.ar/perfumes-fragancias/
+https://listado.mercadolibre.com.ar/otras-categorias/coberturas-extendidas/
+https://servicios.mercadolibre.com.ar/mantenimiento-de-vehiculos/
+https://deportes.mercadolibre.com.ar/badminton/
+https://juegos-juguetes.mercadolibre.com.ar/armas-lanzadores-juguete/
+https://libros.mercadolibre.com.ar/catalogos/
+https://listado.mercadolibre.com.ar/industrias-oficinas/otros/
+https://motos.mercadolibre.com.ar/repuestos-cuatriciclos/
+https://videojuegos.mercadolibre.com.ar/videojuegos/
+https://juegos-juguetes.mercadolibre.com.ar/peloteros-y-castillos/
+https://hogar.mercadolibre.com.ar/iluminacion/
+https://deportes.mercadolibre.com.ar/esgrima/
+https://juegos-juguetes.mercadolibre.com.ar/titeres-marionetas/
+https://listado.mercadolibre.com.ar/otros/
+https://servicios.mercadolibre.com.ar/fiestas-eventos/
+https://listado.mercadolibre.com.ar/banos-sanitarios/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/cotillon/
+https://camaras-digitales.mercadolibre.com.ar/filmadoras-camaras-accion/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/decoracion-para-fiestas/
+https://listado.mercadolibre.com.ar/repuestos-maquinaria-agricola/
+https://zapatos.mercadolibre.com.ar/calzado/
+https://juegos-juguetes.mercadolibre.com.ar/munecos-munecas/
+https://listado.mercadolibre.com.ar/industrias-oficinas/equipamiento-oficinas/
+https://videojuegos.mercadolibre.com.ar/flippers-y-arcade/
+https://deportes.mercadolibre.com.ar/kitesurf/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/tratamientos-belleza/
+https://electronica.mercadolibre.com.ar/proyectores-pantallas/
+https://vehiculos.mercadolibre.com.ar/semirremolques/
+https://joyas.mercadolibre.com.ar/joyas-bijouterie/
+https://juegos-juguetes.mercadolibre.com.ar/patines-patinetas/
+https://telefonia.mercadolibre.com.ar/tarifadores-cabinas/
+https://tuning.mercadolibre.com.ar/tuning/
+https://computacion.mercadolibre.com.ar/almacenamiento/
+https://inmuebles.mercadolibre.com.ar/campos/
+https://electronica.mercadolibre.com.ar/accesorios-tv/
+https://listado.mercadolibre.com.ar/insumos-tatuajes/
+https://vehiculos.mercadolibre.com.ar/otros/
+https://computacion.mercadolibre.com.ar/accesorios-antiestatica/
+https://camaras-digitales.mercadolibre.com.ar/instrumentos-opticos/
+https://ropa.mercadolibre.com.ar/calzas/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/manicuria-pedicuria/
+https://libros.mercadolibre.com.ar/manga/
+https://deportes.mercadolibre.com.ar/zapatillas/
+https://listado.mercadolibre.com.ar/bebes/andadores-vehiculos/
+https://joyas.mercadolibre.com.ar/repuestos-relojes/
+https://deportes.mercadolibre.com.ar/fitness-musculacion/
+https://listado.mercadolibre.com.ar/licencias-taxis/
+https://computacion.mercadolibre.com.ar/componentes-pc/
+https://listado.mercadolibre.com.ar/pintureria/
+https://listado.mercadolibre.com.ar/animales-mascotas/roedores/
+https://inmuebles.mercadolibre.com.ar/departamentos/
+https://telefonia.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/bebes/articulos-maternidad/
+https://servicios.mercadolibre.com.ar/comunicacion-diseno/
+https://computacion.mercadolibre.com.ar/lectores-scanners/
+https://listado.mercadolibre.com.ar/merceria/
+https://vehiculos.mercadolibre.com.ar/acc-repuestos-nauticos/
+https://servicios.mercadolibre.com.ar/belleza-cuidado-personal/
+https://electronica.mercadolibre.com.ar/drones-accesorios/
+https://servicios.mercadolibre.com.ar/fotografia-musica-cine/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/articulos-peluqueria/
+https://servicios.mercadolibre.com.ar/asesoramiento-contable-legal/
+https://deportes.mercadolibre.com.ar/equitacion-polo/
+https://hogar.mercadolibre.com.ar/colchones-sommiers/
+https://coleccionables.mercadolibre.com.ar/articulos-fumadores/
+https://autos.mercadolibre.com.ar/seguridad-vehicular/
+https://ropa.mercadolibre.com.ar/buzos-hoodies/
+https://ropa.mercadolibre.com.ar/accesorios/
+https://deportes.mercadolibre.com.ar/rugby/
+https://listado.mercadolibre.com.ar/refrigeracion/
+https://deportes.mercadolibre.com.ar/pilates-y-yoga/
+https://computacion.mercadolibre.com.ar/laptops/
+https://videojuegos.mercadolibre.com.ar/repuestos-consolas/
+https://servicios.mercadolibre.com.ar/delivery/
+https://hogar.mercadolibre.com.ar/textiles-decoracion/
+https://hogar.mercadolibre.com.ar/organizacion/
+https://electronica.mercadolibre.com.ar/repuestos-tv/
+https://listado.mercadolibre.com.ar/bebes/salud/
+https://listado.mercadolibre.com.ar/antiguedades/
+https://videojuegos.mercadolibre.com.ar/accesorios-consolas/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-antiestres-e-ingenio/
+https://inmuebles.mercadolibre.com.ar/fondo-de-comercio/
+https://libros.mercadolibre.com.ar/comics-historietas/
+https://listado.mercadolibre.com.ar/infraestructura-rural/
+https://instrumentos.mercadolibre.com.ar/otros/
+https://inmuebles.mercadolibre.com.ar/otros/
+https://ropa.mercadolibre.com.ar/enteritos/
+https://vehiculos.mercadolibre.com.ar/planes-de-ahorro/
+https://juegos-juguetes.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/plomeria/
+https://listado.mercadolibre.com.ar/bebidas/
+https://coleccionables.mercadolibre.com.ar/posters/
+https://listado.mercadolibre.com.ar/kits-criminalistica/
+https://inmuebles.mercadolibre.com.ar/consultorios/
+https://electronica.mercadolibre.com.ar/fundas-bolsos/
+https://deportes.mercadolibre.com.ar/windsurf/
+https://juegos-juguetes.mercadolibre.com.ar/electronicos-ninos/
+https://ropa.mercadolibre.com.ar/trajes-de-bano/
+https://listado.mercadolibre.com.ar/animales-mascotas/peces/
+https://juegos-juguetes.mercadolibre.com.ar/juegos-salon/
+https://servicios.mercadolibre.com.ar/viajes-turismo/
+https://computacion.mercadolibre.com.ar/perifericos-pc/
+https://deportes.mercadolibre.com.ar/buceo/
+https://camaras-digitales.mercadolibre.com.ar/repuestos-camaras/
+https://listado.mercadolibre.com.ar/aberturas/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/otras/
+https://videojuegos.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/electrodomesticos/cuidado-personal/
+https://deportes.mercadolibre.com.ar/ciclismo/
+https://instrumentos.mercadolibre.com.ar/equipos-dj-accesorios/
+https://hogar.mercadolibre.com.ar/bazar-cocina/
+https://electronica.mercadolibre.com.ar/audio/
+https://listado.mercadolibre.com.ar/comida-preparada-catering/
+https://juegos-juguetes.mercadolibre.com.ar/kits-imprimibles-fiestas/
+https://autos.mercadolibre.com.ar/navegadores-gps/
+https://electronica.mercadolibre.com.ar/accesorios-audio-y-video/
+https://listado.mercadolibre.com.ar/otras-categorias/esoterismo/
+https://deportes.mercadolibre.com.ar/tenis-padel-squash/
+https://deportes.mercadolibre.com.ar/juegos-salon/
+https://listado.mercadolibre.com.ar/seguridad-laboral/
+https://servicios.mercadolibre.com.ar/transporte/
+https://listado.mercadolibre.com.ar/bebes/comida/
+https://motos.mercadolibre.com.ar/
+https://vehiculos.mercadolibre.com.ar/camiones/
+https://deportes.mercadolibre.com.ar/softball-beisbol/
+https://listado.mercadolibre.com.ar/insumos-hacer-velas/
+https://deportes.mercadolibre.com.ar/camping-caza-pesca/
+https://videojuegos.mercadolibre.com.ar/consolas/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/maquillaje/
+https://inmuebles.mercadolibre.com.ar/depositos-y-galpones/
+https://listado.mercadolibre.com.ar/bebes/juegos-juguetes/
+https://autos.mercadolibre.com.ar/herramientas/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-cotillon-descartables-fiestas/
+https://hogar.mercadolibre.com.ar/adornos-decoracion-del/
+https://listado.mercadolibre.com.ar/movilidad/
+https://inmuebles.mercadolibre.com.ar/bovedas-nichos-parcelas/
+https://ropa.mercadolibre.com.ar/trajes/
+https://vehiculos.mercadolibre.com.ar/neumaticos/
+https://computacion.mercadolibre.com.ar/pc-escritorio/
+2021-02-02 22:36:59,610  scrapy.core.engine  DEBUG  Crawled (200) <GET https://celulares.mercadolibre.com.ar/lentes-realidad-virtual/> (referer: None)
+2021-02-02 22:36:59,999  scrapy.core.engine  DEBUG  Crawled (200) <GET https://servicios.mercadolibre.com.ar/oficinas/> (referer: None)
+2021-02-02 22:37:00,035  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/electrodomesticos/climatizacion/> (referer: None)
+2021-02-02 22:37:00,058  scrapy.core.engine  DEBUG  Crawled (200) <GET https://inmuebles.mercadolibre.com.ar/oficinas/> (referer: None)
+2021-02-02 22:37:00,172  scrapy.core.engine  DEBUG  Crawled (200) <GET https://ropa.mercadolibre.com.ar/lotes/> (referer: None)
+2021-02-02 22:37:00,224  scrapy.spidermiddlewares.offsite  DEBUG  Filtered offsite request to 'servicio.mercadolibre.com.ar': <GET https://servicio.mercadolibre.com.ar/MLA-895867937-alquiler-de-maquinas-expendedoras-de-cafe-comodato-nescafe-_JM#position=1&type=item&tracking_id=e9dd3c77-62ba-4eb6-8040-8f08d7fb99e8>
+2021-02-02 22:37:00,466  scrapy.spidermiddlewares.offsite  DEBUG  Filtered offsite request to 'inmueble.mercadolibre.com.ar': <GET https://inmueble.mercadolibre.com.ar/MLA-901005788-edificio-san-telmo-_JM#position=1&type=item&tracking_id=faf41170-680f-4727-a5a5-41dcdd41742b>
+2021-02-02 22:37:00,562  scrapy.core.engine  DEBUG  Crawled (200) <GET https://juegos-juguetes.mercadolibre.com.ar/mesas-sillas-ninos/> (referer: None)
+2021-02-02 22:37:00,588  scrapy.core.engine  DEBUG  Crawled (200) <GET https://videojuegos.mercadolibre.com.ar/accesorios-pc-gaming/> (referer: None)
+2021-02-02 22:37:00,603  scrapy.core.engine  DEBUG  Crawled (200) <GET https://celulares.mercadolibre.com.ar/accesorios/> (referer: None)
+2021-02-02 22:37:00,636  scrapy.core.engine  DEBUG  Crawled (200) <GET https://tuning.mercadolibre.com.ar/performance/> (referer: None)
+2021-02-02 22:37:00,729  scrapy.spidermiddlewares.offsite  DEBUG  Filtered offsite request to 'juegos-juguetes.mercadolibre.com.ar': <GET https://juegos-juguetes.mercadolibre.com.ar/mesas-sillas-ninos/_Desde_51>
+2021-02-02 22:37:00,789  scrapy.core.engine  DEBUG  Crawled (200) <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/> (referer: None)
+2021-02-02 22:37:00,794  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-735042561-control-joystick-vr-box-para-android-o-iphone-_JM#position=20&type=item&tracking_id=749933fd-c717-44aa-93a6-1492ecafa29b> (referer: https://celulares.mercadolibre.com.ar/lentes-realidad-virtual/)
+2021-02-02 22:37:00,817  scrapy.core.engine  DEBUG  Crawled (200) <GET https://relojes.mercadolibre.com.ar/pulsometros-cronometros/> (referer: None)
+2021-02-02 22:37:01,483    SPIDER   INFO  NUEVO. (seller_id: 313992186)
+2021-02-02 22:37:01,484    SPIDER   INFO  Buscando resultados del 313992186
+2021-02-02 22:37:07,548    SPIDER   INFO  Se encontraron 600 resultados del 313992186
+2021-02-02 22:44:00,778    SPIDER   INFO  Guardado en SELLERS_VISITED.txt
+2021-02-02 22:44:00,778    SPIDER   INFO  Registrado en outputs.json
+2021-02-02 22:44:00,778  scrapy.core.scraper  DEBUG  Scraped from <200 https://articulo.mercadolibre.com.ar/MLA-735042561-control-joystick-vr-box-para-android-o-iphone-_JM>
+{'time': datetime.datetime(2021, 2, 2, 22, 37, 1, 484226), 'seller_id': 313992186, 'data': {'id': 313992186, 'nickname': 'UPRINT ARGENTINA', 'permalink': 'http://perfil.mercadolibre.com.ar/UPRINT+ARGENTINA', 'registration_date': '2018-04-11T14:27:21.000-04:00', 'seller_reputation': {'level_id': '5_green', 'power_seller_status': 'platinum', 'transactions': {'total': 4818, 'canceled': 435, 'period': 'historic', 'ratings': {'negative': 0.05, 'positive': 0.93, 'neutral': 0.02}, 'completed': 4383}, 'metrics': {'sales': {'period': '60 days', 'completed': 2513}}}, 'tags': ['normal', 'user_info_verified', 'mshops', 'credits_profile', 'messages_as_seller', 'messages_as_buyer'], 'eshop': None, 'cantidad_articulos': 600, 'cantidad_ventas': 4679, 'revenue': 4346956.25, 'categorias': ['Electrónica, Audio y Video', 'Salud y Equipamiento Médico', 'Celulares y Teléfonos', 'Souvenirs, Cotillón y Fiestas', 'Arte, Librería y Mercería', 'Ropa y Accesorios', 'Hogar, Muebles y Jardín', 'Computación', 'Juegos y Juguetes', 'Cámaras y Accesorios', 'Libros, Revistas y Comics', 'Industrias y Oficinas', 'Belleza y Cuidado Personal', 'Deportes y Fitness', 'Animales y Mascotas', 'Electrodomésticos y Aires Ac.', 'Otras categorías']}, 'seller_address_2': {'id': '', 'comment': '', 'address_line': '', 'zip_code': '', 'country': {'id': 'AR', 'name': 'Argentina'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'city': {'id': 'TUxBQk7a0TcwOTRa', 'name': 'Núñez'}, 'latitude': '', 'longitude': ''}, 'seller_address': {'city': {'id': 'TUxBQk7a0TcwOTRa', 'name': 'Núñez'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'country': {'id': 'AR', 'name': 'Argentina'}, 'search_location': {'neighborhood': {'id': 'TUxBQk7a0TcwOTRa', 'name': 'Núñez'}, 'city': {'id': 'TUxBQ0NBUGZlZG1sYQ', 'name': 'Capital Federal'}, 'state': {'id': 'TUxBUENBUGw3M2E1', 'name': 'Capital Federal'}}, 'id': 980348158}}
+2021-02-02 22:44:00,935  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/> (referer: None)
+2021-02-02 22:44:00,998  scrapy.extensions.logstats   INFO  Crawled 13 pages (at 13 pages/min), scraped 1 items (at 1 items/min)
+2021-02-02 22:44:00,999  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://autos.mercadolibre.com.ar/repuestos/> (failed 1 times): User timeout caused connection failure: Getting https://autos.mercadolibre.com.ar/repuestos/ took longer than 180.0 seconds..
+2021-02-02 22:44:00,999  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/herramientas-y-construccion/herramientas/> (failed 1 times): User timeout caused connection failure: Getting https://listado.mercadolibre.com.ar/herramientas-y-construccion/herramientas/ took longer than 180.0 seconds..
+2021-02-02 22:44:01,000  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/ropa-deportiva/> (failed 1 times): User timeout caused connection failure: Getting https://deportes.mercadolibre.com.ar/ropa-deportiva/ took longer than 180.0 seconds..
+2021-02-02 22:44:01,060  scrapy.dupefilters  DEBUG  Filtered duplicate request: <GET https://articulo.mercadolibre.com.ar/MLA-735042561-control-joystick-vr-box-para-android-o-iphone-_JM#root-app> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2021-02-02 22:44:01,811  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/agro-generadores-energia/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:01,864  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/publicidad-promocion/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:02,248  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/insectos/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:04,066  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/otras-categorias/gift-cards/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:04,937  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://servicios.mercadolibre.com.ar/mascotas/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:06,033  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/disfraces-cotillon-invitaciones-tarjetas/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:07,724  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://servicios.mercadolibre.com.ar/hogar-construccion/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:08,863  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/parapente/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:09,715  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/eventos-a-beneficio/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:11,820  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/musica-peliculas-series/musica/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:12,742  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/esqui-snowboard/> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:14,284  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-882839356-lentes-realidad-virtual-3d-gafas-vr-box-celular-smartphone-_JM#position=19&type=item&tracking_id=749933fd-c717-44aa-93a6-1492ecafa29b> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:14,840  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-884922154-nuevo-oculus-quest-2-64-gb-advanced-all-in-one-_JM#position=18&type=item&tracking_id=749933fd-c717-44aa-93a6-1492ecafa29b> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:16,512  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://servicios.mercadolibre.com.ar/oficinas/_Desde_51> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:17,739  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-868796305-lote-ropa-mujer-nueva-temporada-ofertaaa-_JM?searchVariation=60334813341#searchVariation=60334813341&position=20&type=item&tracking_id=9f3674b0-f0c8-406a-8893-72ee15e08d66> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:18,936  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-855364794-lote-ropa-mujer-dama-remeras-remerones-oferta-_JM?searchVariation=57131169021#searchVariation=57131169021&position=18&type=item&tracking_id=9f3674b0-f0c8-406a-8893-72ee15e08d66> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:20,094  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-895962254-lote-ropa-mujer-dama-excelente-oportunidad-oferta-_JM?searchVariation=67573683051#searchVariation=67573683051&position=16&type=item&tracking_id=9f3674b0-f0c8-406a-8893-72ee15e08d66> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:21,568  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-900809971-lote-ropa-4-prendas-nino-talle-1-1-ano-_JM#position=14&type=item&tracking_id=9f3674b0-f0c8-406a-8893-72ee15e08d66> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:22,727  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-689652491-juego-de-mesa-con-dos-sillitas-ninos-_JM#position=1&type=item&tracking_id=76b21c13-9064-441e-af4c-478f1399d768> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:24,043  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-874169017-lote-de-10-pantalones-_JM#position=12&type=item&tracking_id=9f3674b0-f0c8-406a-8893-72ee15e08d66> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:25,549  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://tuning.mercadolibre.com.ar/performance/_Desde_21> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:26,874  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-877705114-xiaomi-mi-smart-band-5-smart-watch-reloj-inteligente-_JM#position=1&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:27,880  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_451_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:29,577  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_401_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:30,820  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_351_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:32,193  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-653264111-caniches-micro-toymachitos-negros-y-blancos-_JM#position=50&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:32,494  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-757637697-set-de-tijeras-y-peine-peluqueria-canina-tornasoladas-_JM#position=49&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:34,191  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-843372847-bandeja-sanitaria-cacc-perros-cachorros-mascotas-40-off-_JM#position=48&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:34,610  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-721391932-kong-extreme-l-juguetes-rellenable-large-perros-_JM?searchVariation=33172455550#searchVariation=33172455550&position=47&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:35,920  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-869124376-border-collie-puro-listo-para-retirar-_JM#position=46&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:37,234  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-875724182-correa-larga-10-metros-reforzada-paseo-adiestramiento-perros-_JM?searchVariation=62919932993#searchVariation=62919932993&position=45&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:37,841  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-607794358-peladora-perros-peluqueria-canina-1-vel-agp-001-envio-full-_JM?searchVariation=33536994867#searchVariation=33536994867&position=44&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:39,928  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-797152808-american-pitbull-terrier-cachorros-macho-silver-_JM#position=43&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:41,135  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-716695115-registro-inicial-alianza-canina-argentina-internacional-_JM#position=42&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:42,569  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-870368374-maquina-cortar-pelo-perros-cortadora-canina-accesorios--_JM?searchVariation=60801683720#searchVariation=60801683720&position=41&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:43,926  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-763499310-mini-schnauzer-blanco-sal-y-pimienta-negro-macho-pedriguee-_JM#position=40&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:44,485  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-772953175-puerta-seguridad-escalera-bebes-retractil-roll-door-_JM#position=39&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:45,913  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-742587677-cachorros-caniche-mini-toy-_JM#position=38&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:46,992  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-649497226-caniches-micro-toyhembritas-negros-y-blancos-_JM#position=37&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:48,350  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-789070105-dachshund-mini-macho-sena-_JM#position=36&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:49,829  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-615099983-cinturon-de-seguridad-para-mascotas-reglamentario-el-mejor-_JM?searchVariation=64192471424#searchVariation=64192471424&position=35&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:50,979  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-868514165-maquina-cortar-pelo-perros-cortadora-canina-accesorios--_JM?searchVariation=60129687997#searchVariation=60129687997&position=34&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:52,781  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-689710575-caniche-micro-mini-toy-machito-y-hembrita-negro-azabache-_JM#position=33&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:53,328  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-844953846-salchicha-mini-miniaturaahembraa-_JM#position=32&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:54,819  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-772939510-dogo-argentino-_JM#position=31&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:56,043  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-636121139-caniches-micro-_JM?searchVariation=32566977265#searchVariation=32566977265&position=30&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:56,942  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-901508536-cachorro-bulldog-_JM#position=29&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:58,107  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-898571786-labrador-pequena-ternura-ladriditoss-_JM#position=28&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:44:58,791  scrapy.extensions.logstats   INFO  Crawled 13 pages (at 0 pages/min), scraped 1 items (at 0 items/min)
+2021-02-02 22:44:59,471  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-733535768-cachorros-border-collie--_JM#position=27&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:00,844  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-653517674-cortadora-pelo-pelado-perro-cortante-ceramico-con-envio-full-_JM#position=26&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:01,808  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-741961229-caniche-micro-toy-hembrita-apricot-oscuro-_JM#position=25&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:03,062  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-828242759-cachorro-bull-dog-frances-consultar-_JM#position=24&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:04,196  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-904489170-malteses-_JM#position=23&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:05,643  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-773973979-cachorros-shih-tzu-shitzu-shihtzu-mini-hembras-_JM#position=22&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:06,537  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-840218976-yorkshire-terrier-macho-mini-retiralo-hoy-_JM#position=21&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:08,021  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-896437076-cachorros-border-colliehermosos-_JM#position=20&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:09,467  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-770029926-bulldog-frances-vaquita-_JM#position=19&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:11,252  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-866559417-cachorro-labrador-_JM?searchVariation=59411834801#searchVariation=59411834801&position=18&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:12,627  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-898051816-rottweiler-cachorros-reserva-_JM#position=17&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:13,892  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-787367620-cachorros-salchichas-mini-arlequines-_JM#position=16&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:15,455  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-670442757-caniches-micro-toymachito-apricot-oscuro-_JM#position=15&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:16,469  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-830783967-caniche-blanco-_JM#position=14&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:18,024  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-777469331-cachorros-golden-retriever-dorado-machos-y-hembras--_JM?searchVariation=62673125620#searchVariation=62673125620&position=13&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:18,580  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-854366503-ovejeros-alemanes-de-45-dias-vacunados-reservalo-_JM#position=12&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:20,591  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-861345781-salchicha-mini-dachshund-reserva--_JM#position=11&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:21,704  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-832927843-chihuahua-mini-cachorro-_JM#position=10&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:23,095  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-828080934-american-bully-cachorros-hembras-_JM?searchVariation=47215598327#searchVariation=47215598327&position=9&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:24,580  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-900912961-cachorros-shitzu-para-reservar-_JM#position=8&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:26,027  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-876795346-cachorros-collie-_JM#position=7&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:27,176  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-904411445-sena-cachorros-_JM#position=6&type=item&tracking_id=6be6a402-e5ee-41e7-86bd-709e0a7b0bd6> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:28,588  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_451> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:29,645  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_401> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:30,273  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_351> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:31,918  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_301> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:33,309  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_251> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:33,948  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_201> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:35,396  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_151> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:37,008  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/animales-mascotas/perros/_Desde_101> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:37,363  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-731360010-reloj-gps-garmin-forerunner-735xt-con-banda-tienda-oficial-_JM#position=50&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:38,286  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-868272162-reloj-garmin-instinct-solar-tactical-ultra-resistente-gps-_JM?searchVariation=60057592983#searchVariation=60057592983&position=49&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:39,998  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-876658051-reloj-inteligente-smartwatch-bluetooth-monitor-cardiaco-_JM?searchVariation=63300955961#searchVariation=63300955961&position=48&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:40,783  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-691626824-reloj-gps-garmin-forerunner-735xt-con-banda-tienda-oficial-_JM#position=47&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:41,720  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-738883554-reloj-gps-forerunner-35-negro-running-cardio-tienda-oficia-_JM?searchVariation=25820117179#searchVariation=25820117179&position=46&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:43,079  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-837803315-reloj-approach-s62-bundle-sensores-ct-10-gps-golf-garmin-_JM?searchVariation=56975393511#searchVariation=56975393511&position=45&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:43,868  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-821203791-reloj-garmin-vivomove-3s-pulsometro-gps-39-mm-tienda-oficial-_JM#position=44&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:45,376  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-864693718-cronometro-modena-10-memorias-99-lap-digital-deportivo-cr001-_JM#position=43&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:46,338  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-867091759-reloj-inteligente-smartwatch-band-fit-bluetooth-ip67-_JM?searchVariation=59608473512#searchVariation=59608473512&position=42&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:48,182  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-731359861-reloj-running-garmin-forerunner-645-musica-en-reloj-tienda-o-_JM#position=41&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:48,276  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-689955927-banda-igpsport-con-sensor-de-frecuencia-cardiaca-hr40-strava-_JM?searchVariation=41151334371#searchVariation=41151334371&position=40&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:49,873  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-808951514-reloj-malla-para-forerunner-10-15-negra-grande-uso-intens-_JM#position=39&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:50,781  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-787969249-reloj-garmin-forerunner-245-musica-spotify-pulsometro-tienda-_JM#position=38&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:52,408  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-865756987-smartband-reloj-inteligente-deportivo-cardiaco-smartwatch-_JM?searchVariation=59219651892#searchVariation=59219651892&position=37&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:52,994  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-745889317-smartband-reloj-digital-podometro-cuenta-pasos-calorias-_JM?searchVariation=27157366196#searchVariation=27157366196&position=36&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:54,555  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-877748222-xiaomi-mi-smart-band-4-c-smart-watch-reloj-inteligente-_JM#position=35&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:56,221  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-829117793-reloj-garmin-swim-2-natacion-para-pileta-y-aguas-abiertas-_JM?searchVariation=47546664925#searchVariation=47546664925&position=34&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:56,889  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-866724179-reloj-pulsometro-de-frecuencia-cardiacabanda-beurer-pm-25-_JM?searchVariation=59460383410#searchVariation=59460383410&position=33&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:45:57,927  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-897655567-reloj-deporti2021-02-02 22:53:32,454    SPIDER   INFO  Guardado en SELLERS_VISITED.txt
+2021-02-02 22:53:32,454    SPIDER   INFO  Registrado en outputs.json
+2021-02-02 22:53:32,454  scrapy.core.scraper  DEBUG  Scraped from <200 https://articulo.mercadolibre.com.ar/MLA-623790185-calza-chupin-ile-algodon-y-lycra-tiro-medio-mujer-art2909-_JM?searchVariation=30937823388>
+{'time': datetime.datetime(2021, 2, 2, 22, 23, 47, 464076), 'seller_id': 103000403, 'data': {'id': 103000403, 'nickname': 'CASAJOSECITO SRL', 'permalink': 'http://perfil.mercadolibre.com.ar/CASAJOSECITO+SRL', 'registration_date': '2012-02-16T21:44:21.000-04:00', 'seller_reputation': {'level_id': '5_green', 'power_seller_status': 'platinum', 'transactions': {'total': 82056, 'canceled': 3479, 'period': 'historic', 'ratings': {'negative': 0.02, 'positive': 0.97, 'neutral': 0.01}, 'completed': 78577}, 'metrics': {'sales': {'period': '60 days', 'completed': 14706}}}, 'tags': ['normal', 'user_info_verified', 'eshop', 'credits_profile', 'mshops', 'messages_as_seller', 'messages_as_buyer'], 'eshop': {'nick_name': 'CASAJOSECITO SRL', 'eshop_rubro': None, 'eshop_id': 280510, 'eshop_locations': [], 'site_id': 'MLA', 'eshop_logo_url': 'http://resources.mlstatic.com/eshops/103000403v571738.png', 'eshop_status_id': 1, 'seller': 103000403, 'eshop_experience': 0}, 'cantidad_articulos': 2322, 'cantidad_ventas': 67095, 'revenue': 83139140.32000001, 'categorias': ['Computación', 'Electrónica, Audio y Video', 'Consolas y Videojuegos', 'Ropa y Accesorios', 'Hogar, Muebles y Jardín', 'Celulares y Teléfonos', 'Herramientas y Construcción', 'Bebés', 'Deportes y Fitness', 'Salud y Equipamiento Médico', 'Arte, Librería y Mercería', 'Souvenirs, Cotillón y Fiestas', 'Otras categorías']}, 'seller_address_2': {'id': '', 'comment': '', 'address_line': '', 'zip_code': '', 'country': {'id': 'AR', 'name': 'Argentina'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'city': {'id': 'TUxBQk1PTjUxOTJa', 'name': 'Monserrat'}, 'latitude': '', 'longitude': ''}, 'seller_address': {'city': {'id': 'TUxBQk1PTjUxOTJa', 'name': 'Monserrat'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'country': {'id': 'AR', 'name': 'Argentina'}, 'search_location': {'neighborhood': {'id': 'TUxBQk1PTjUxOTJa', 'name': 'Monserrat'}, 'city': {'id': 'TUxBQ0NBUGZlZG1sYQ', 'name': 'Capital Federal'}, 'state': {'id': 'TUxBUENBUGw3M2E1', 'name': 'Capital Federal'}}, 'id': 127106616}}
+2021-02-02 22:53:32,461  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-859640520-depiladora-laser-lescolton-ipl-definitiva-220v-tc011c-lady-_JM#position=49&type=item&tracking_id=074fade1-a658-4094-a081-369148d52a24> (referer: https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/depilacion/)
+2021-02-02 22:53:32,474  scrapy.extensions.logstats   INFO  Crawled 43 pages (at 7 pages/min), scraped 11 items (at 2 items/min)
+2021-02-02 22:53:32,787    SPIDER   INFO  NUEVO. (seller_id: 37133205)
+2021-02-02 22:53:32,787    SPIDER   INFO  Buscando resultados del 37133205
+2021-02-02 22:53:48,793    SPIDER   INFO  Se encontraron 1474 resultados del 37133205
+501#searchVariation=58748653501&position=43&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:12,806  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-808664577-reloj-malla-para-forerunner-25-negra-grande-uso-intensivo-_JM#position=30&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:13,990  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-884409798-pulsera-de-salud-y-actividad-fisica-fitbit-inspire-2-_JM#position=29&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:15,180  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-732374384-reloj-digital-smartband-podometro-cuenta-pasos-calorias-_JM?searchVariation=34913162572#searchVariation=34913162572&position=28&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:16,262  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-879079115-reloj-garmin-forerunner-745-gps-musica-altimetro-barometrico-_JM?searchVariation=64180135783#searchVariation=64180135783&position=27&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:17,352  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-787970611-reloj-garmin-forerunner-245-musica-pulsometro-spotify-tienda-_JM#position=26&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:18,837  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-884668700-cronometro-deportivo-de-mano-tressa-modelo-lat-cron-_JM?searchVariation=66381643079#searchVariation=66381643079&position=25&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:19,785  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-825113299-reloj-garmin-swim-2-natacion-para-pileta-y-aguas-abiertas-_JM?searchVariation=46370070716#searchVariation=46370070716&position=24&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:21,289  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-795329979-reloj-garmin-forerunner-245-correr-ciclismo-pulsometro-tiend-_JM?searchVariation=39386915879#searchVariation=39386915879&position=23&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:22,827  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-784222345-tressa-reloj-cardio-monitor-pulsometro-con-banda-original--_JM?searchVariation=48758670672#searchVariation=48758670672&position=22&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:23,696  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-687876932-smartwatch-smartband-y9-you-pasos-kms-calorias-sueno-correr-_JM?searchVariation=40174458381#searchVariation=40174458381&position=21&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:24,928  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-814198421-reloj-garmin-smartwatch-vivoactive-4s-spotify-tienda-oficial-_JM#position=20&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:26,295  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-717552363-reloj-running-garmin-forerunner-645-musica-en-reloj-tienda-o-_JM#position=19&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:26,760  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-877746663-xiaomi-mi-smart-band-5-smart-watch-reloj-inteligente-_JM#position=18&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:28,712  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-784227609-tressa-cronometro-deportivo-de-mano-10-lap-memorias-crono-_JM#position=17&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:29,423  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-836370010-reloj-inteligente-smartband-iqual-motion-bluetooth-deportivo-_JM?searchVariation=49756543306#searchVariation=49756543306&position=16&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:30,162  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-856085074-pulsera-de-salud-y-actividad-fisica-fitbit-charge-4-_JM#position=15&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:31,940  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-814198426-reloj-garmin-smartwatch-vivoactive-4-spotify-tienda-oficial-_JM#position=14&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:32,599  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-897656095-reloj-deportivo-smartband-running-pasos-cardio-inteligente-5-_JM?searchVariation=68353369914#searchVariation=68353369914&position=13&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:33,818  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-762240953-malla-silicona-pulsera-xiaomi-smartband-mi-band-3-4-deportiv-_JM?searchVariation=51389536183#searchVariation=51389536183&position=12&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:35,676  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-871087848-smart-band-m3-ritmo-cardiaco-reloj-inteligente-podometro-_JM?searchVariation=61086928810#searchVariation=61086928810&position=11&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:36,587  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-731359847-reloj-gps-garmin-forerunner-235-todos-los-colores-tienda-ofi-_JM#position=10&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:38,217  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-867947917-xiaomi-mi-band-5-smartwatch-reloj-inteligente-version-global-_JM?searchVariation=59960139908#searchVariation=59960139908&position=9&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:39,223  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-731359842-reloj-gps-garmin-forerunner-35-todos-los-colores-tienda-ofic-_JM?searchVariation=25268879812#searchVariation=25268879812&position=8&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:40,532  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-862601412-reloj-inteligente-smartwatch-m3-smartband-ritmo-cardiaco--_JM?searchVariation=58134513578#searchVariation=58134513578&position=7&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:42,282  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-676355961-reloj-gps-garmin-forerunner-35-todos-los-colores-tienda-ofic-_JM?searchVariation=18930581056#searchVariation=18930581056&position=6&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:43,297  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-735211260-smartwatch-reloj-y9-smartband-you-kms-pasos-correr-calorias-_JM?searchVariation=40173769983#searchVariation=40173769983&position=5&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:45,155  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-877699557-xiaomi-mi-smart-band-4-c-smart-watch-reloj-inteligente-_JM#position=4&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:45,638  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-842168304-malla-reemplazo-correa-xiaomi-mi-band-3-4-silicona-pulsera-_JM?searchVariation=54060214990#searchVariation=54060214990&position=3&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:47,248  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-703680409-reloj-gps-garmin-forerunner-235-todos-los-colores-tienda-ofi-_JM#position=2&type=item&tracking_id=e65e9b73-aa41-41f0-ac1e-0b394c37b39d> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:48,676  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-905010765-kayak-sportkayaks-sk-1-remo-chaleco-pesca-paseo-travesia-_JM#position=42&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:50,539  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-641048176-chaleco-aquafloat-ski-nino-todos-los-talles-aprobado-pna-_JM?searchVariation=70273478676#searchVariation=70273478676&position=41&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:50,648  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-877926384-flotador-ninos-guima-maru-_JM#position=40&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:52,677  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-836601462-ancla-plegable-25-kg-ideal-kayaks-inflables-_JM#position=39&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:54,159  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-638387279-kayak-rocker-mirage-2-a-3-pers-c4-free-terra-envio-gratis-_JM#position=38&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:55,661  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-735569879-4-salvavidas-poncho-reglamentario-pna-envio-gratis-_JM#position=37&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:56,802  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-882586350-flotador-ninos-guima-tiburon-20-_JM#position=36&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:58,286  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-704866784-2-salvavidas-poncho-reglament-pna-silbato-envio-regalo-_JM#position=35&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:46:58,791  scrapy.extensions.logstats   INFO  Crawled 13 pages (at 0 pages/min), scraped 1 items (at 0 items/min)
+2021-02-02 22:46:59,747  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-638383611-kayak-rocker-wave-combo-1-pesca-freeterra-premium-_JM#position=34&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:00,545  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-698563035-tabla-stand-up-paddle-sup-stingray-rocker-kayak-envio-gratis-_JM#position=33&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:01,488  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-702906748-kayak-canoa-inflable-betta-2-personas-kit-salvavidas-2019-_JM#position=32&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:02,934  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-806990181-flotador-piletero-ninos-splash-bracitos-salvavidas-_JM#position=31&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:04,085  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-614528045-bote-inflable-bestway-196x114-cm-61100-envios-luico-_JM#position=30&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:04,964  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-905013067-kayak-desarmable-sportkayaks-oahu-chaleco-remos-_JM?searchVariation=73613999947#searchVariation=73613999947&position=29&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:06,666  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-638417081-kayak-rocker-one-para-1-persona-combo-7-freeterra-premium-_JM#position=28&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:07,712  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-842219792-asiento-para-kayak-cbolsillo-sirve-ptodos-los-modelos-_JM#position=27&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:08,684  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-827240217-salvavidas-flotador-piletero-bracitos-nino-nina-_JM#position=26&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:09,980  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-685335486-combo-doble-kayak-rocker-warrior-2-chalecos-asientos-_JM#position=25&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:10,599  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-803905796-kayak-desarmable-leos-pescador-combo-chaleco-asiento-remo-_JM?searchVariation=65793727457#searchVariation=65793727457&position=24&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:11,858  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-637990670-bote-inflable-pileta-con-remo-e-inflador-230-x-135-cm-_JM#position=23&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:13,461  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-766356312-chaleco-ninos-tela-importada-fluor-ideal-kayaks-emp-nautica-_JM#position=22&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:15,004  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-901990335-kayak-kyros-kayaklife-emp-nautica-ideal-pesca-y-travesia-_JM#position=21&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:15,573  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-896888143-chaleco-salvavidas-inflable-ninos-pileta-verano-flotador-_JM?searchVariation=67999035458#searchVariation=67999035458&position=20&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:16,796  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-884634033-kayak-escualo-_JM#position=19&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:18,366  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-698357975-kayak-modular-doble-oahu-de-sportkayaks-c2-con-envio-gratis-_JM#position=18&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:19,689  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-678772210-4-salvavidas-poncho-reglament-pna-silbato-envio-regalo-_JM#position=17&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:20,478  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-637990239-bote-inflable-pileta-con-remo-e-inflador-192-x-115-cm-_JM#position=16&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:21,694  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-634050275-salvavidas-torpedo-rescate-profesional-reforzatipo-baywatch-_JM#position=15&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:23,398  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-832411516-chaleco-piletero-flotador-ninos-emp-nautica-1-a-4-anos-_JM#position=14&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:24,843  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-806934661-salvavidas-flotador-piletero-bracitos-nino-nina-splash-_JM#position=13&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:25,624  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-618344692-kayak-k1-atlantikayak-completo-imperdible-emp-nautica-_JM#position=12&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:26,920  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-896438497-salvavidas-torpedo-profesional-aquafloat-baywatch-original-_JM#position=11&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:28,415  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-621966511-canoa-kayak-intex-explorer-k2-inflable-bote-2-personas-_JM?searchVariation=35567337403#searchVariation=35567337403&position=10&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:29,814  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-899971323-kayak-de-1-cuerpo-multicolor-remo-garden-life-_JM#position=9&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:30,684  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-682941751-kayak-canoa-inflable-betta-2-personas-ckitcompleto-mod2019-_JM?searchVariation=34682054851#searchVariation=34682054851&position=8&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:32,180  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-623430389-kayak-triple-niro-by-emp-nautica-ideal-pesca-2-posacanas-_JM#position=7&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:32,426  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-606547887-gran-bote-inflable-remos-inflador-de-pie-bestway-oferta-_JM#position=6&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:33,845  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-755218694-kayak-inflable-intex-explorer-k2-312x91x51cm-_JM?searchVariation=33809316318#searchVariation=33809316318&position=5&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:34,928  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-779529786-kayak-doble-sportkayaks-sk2-combo-chalecos-rba-outdoor-_JM#position=4&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:36,563  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-812870792-kayak-simplo-atlantikayak-respaldo-chalec-remo-emp-nautica-p-_JM#position=3&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:37,680  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-637990038-bote-inflable-pileta-con-remo-e-inflador-150-x-100-cm-ninos-_JM#position=2&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:38,954  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_301_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:40,783  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_251_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:41,787  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_201_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:43,490  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_151_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:44,326  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/pulsometros-cronometros/_Desde_101_NoIndex_True> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:46,119  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-875929915-auricular-gamer-genius-gx-hs-g710v-usb-71-_JM?searchVariation=63013548640#searchVariation=63013548640&position=50&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:46,707  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-878676472-auriculares-gamer-onikuma-k9-con-luz-rgb-y-microfono-_JM?searchVariation=64002197053#searchVariation=64002197053&position=49&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:48,601  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-885698445-venetian-a12-auricular-gamer-headset-gaming-con-microfono-_JM?searchVariation=66894618118#searchVariation=66894618118&position=48&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:48,978  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-879036748-volante-logitech-g923-y-pedales-ps4-pc-racing-wheel-pce-_JM#position=47&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:50,123  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-709845884-joystick-super-nintendo-snes-usb-emul-pc-retropie-recalbox-_JM?searchVariation=43474236812#searchVariation=43474236812&position=46&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:51,750  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-902531233-auricular-headset-vsg-gamer-35mm-kuiper-cmicro-_JM?searchVariation=71944716772#searchVariation=71944716772&position=45&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:52,591  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-876796287-microfono-corbatero-usb-para-notebook-pc-conferencia-zoom-_JM?searchVariation=63369571358#searchVariation=63369571358&position=44&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:54,088  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-793956828-auricular-gamer-con-microfono-pc-noga-stormer-st-819-headset-_JM?searchVariation=39095021424#searchVariation=39095021424&position=43&type=item&tracking_id=19a8563f-5a48-42df-944e-2e33ec33db93> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:55,398  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-901628259-kayak-kyros-kayaklife-emp-nautica-completo-pesca-y-travesia-_JM#position=1&type=item&tracking_id=ce2f7e37-8906-45f8-bfad-d2614084144a> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:55,525  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_451> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:57,079  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_401> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:57,893  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_351> (failed 1 times): 403 Forbidden
+2021-02-02 22:47:58,791  scrapy.extensions.logstats   INFO  Crawled 13 pages (at 0 pages/min), scraped 1 items (at 0 items/min)
+2021-02-02 22:47:59,867  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_301> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:00,951  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_251> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:02,732  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_201> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:03,960  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_151> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:05,276  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/_Desde_101> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:06,846  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-835692545-kit-bosch-bobina-encendido-cables-y-bujias-vw-gol-power-14-_JM?searchVariation=49563572822#searchVariation=49563572822&position=20&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:07,971  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-772510556-lana-vidrio-fmf-escape-4t-silenciador-honda-yamaha-kawasaki-_JM#position=19&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:09,261  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-781794484-valvula-alivio-turbo-chifilido-vw-bora-golf-18t-forge-diverter-blow-off-blowof-factura-a-chilliparts-_JM?searchVariation=43664876420#searchVariation=43664876420&position=18&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:09,628  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-803336735-cubre-volante-para-auto-p-citroen-c3-c-elysee-aircross-_JM#position=17&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:10,933  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-875616955-pedalera-universal-deportiva-tuning-_JM#position=16&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:12,139  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-811578142-valvula-blow-off-forge-peugeot-207-308-gti-thp-cc-mini-ds3-rc-no-bum-bum-chiflido-factura-a-chilliparts--_JM#position=15&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:13,805  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://articulo.mercadolibre.com.ar/MLA-880065464-cables-y-bujias-bosch-fiesta-ecosport-focus-ka-16-rocam-_JM?searchVariation=64568531245#searchVariation=64568531245&position=14&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (failed 1 times): 403 Forbidden
+2021-02-02 22:48:15,322  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-851054583-muffler-tipo-hks-14-milla-explosivo-2-14-a-3-bum-bum-_JM#position=13&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (referer: https://tuning.mercadolibre.com.ar/performance/)
+2021-02-02 22:48:15,669    SPIDER   INFO  NUEVO. (seller_id: 392841778)
+2021-02-02 22:48:15,669    SPIDER   INFO  Buscando resultados del 392841778
+2021-02-02 22:48:19,943    SPIDER   INFO  Se encontraron 408 resultados del 392841778
+2021-02-02 22:52:54,773    SPIDER   INFO  Guardado en SELLERS_VISITED.txt
+2021-02-02 22:52:54,774    SPIDER   INFO  Registrado en outputs.json
+2021-02-02 22:52:54,774  scrapy.core.scraper  DEBUG  Scraped from <200 https://articulo.mercadolibre.com.ar/MLA-851054583-muffler-tipo-hks-14-milla-explosivo-2-14-a-3-bum-bum-_JM>
+{'time': datetime.datetime(2021, 2, 2, 22, 48, 15, 669700), 'seller_id': 392841778, 'data': {'id': 392841778, 'nickname': 'ESCAPESLEZAMA', 'permalink': 'http://perfil.mercadolibre.com.ar/ESCAPESLEZAMA', 'registration_date': '2019-01-07T20:30:39.000-04:00', 'seller_reputation': {'level_id': '5_green', 'power_seller_status': 'platinum', 'transactions': {'total': 2921, 'canceled': 133, 'period': 'historic', 'ratings': {'negative': 0.01, 'positive': 0.99, 'neutral': 0}, 'completed': 2788}, 'metrics': {'sales': {'period': '60 days', 'completed': 623}}}, 'tags': ['normal', 'user_info_verified', 'eshop', 'mshops', 'messages_as_seller', 'messages_as_buyer'], 'eshop': {'nick_name': 'ESCAPESLEZAMA', 'eshop_rubro': None, 'eshop_id': 365369, 'eshop_locations': [], 'site_id': 'MLA', 'eshop_logo_url': 'http://resources.mlstatic.com/eshops/392841778v5e4cef.png', 'eshop_status_id': 1, 'seller': 392841778, 'eshop_experience': 0}, 'cantidad_articulos': 408, 'cantidad_ventas': 1957, 'revenue': 7385320, 'categorias': ['Accesorios para Vehículos', 'Herramientas y Construcción']}, 'seller_address_2': {'id': '', 'comment': '', 'address_line': '', 'zip_code': '', 'country': {'id': 'AR', 'name': 'Argentina'}, 'state': {'id': 'AR-B', 'name': 'Buenos Aires'}, 'city': {'id': 'TUxBQ01BUjU2MGMw', 'name': 'Mar del Plata'}, 'latitude': '', 'longitude': ''}, 'seller_address': {'city': {'id': 'TUxBQ01BUjU2MGMw', 'name': 'Mar del Plata'}, 'state': {'id': 'AR-B', 'name': 'Buenos Aires'}, 'country': {'id': 'AR', 'name': 'Argentina'}, 'search_location': {'neighborhood': {'id': 'TUxBQk9UUjMwNjg0Mg', 'name': 'Otros Barrios'}, 'city': {'id': 'TUxBQ01BUjU2MGMw', 'name': 'Mar del Plata'}, 'state': {'id': 'TUxBUENPU2ExMmFkMw', 'name': 'Bs.As. Costa Atlántica'}}, 'id': 1022141480}}
+2021-02-02 22:52:54,782  scrapy.extensions.logstats   INFO  Crawled 14 pages (at 1 pages/min), scraped 2 items (at 1 items/min)
+2021-02-02 22:52:55,386  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-782696035-kit-bobina-cable-extreme-moto-ferrazzi-competicion-_JM?searchVariation=35692763582#searchVariation=35692763582&position=12&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (referer: https://tuning.mercadolibre.com.ar/performance/)
+2021-02-02 22:52:55,720    SPIDER   INFO  NUEVO. (seller_id: 261177599)
+2021-02-02 22:52:55,720    SPIDER   INFO  Buscando resultados del 261177599
+2021-02-02 22:53:00,820    SPIDER   INFO  Se encontraron 621 resultados del 261177599
+2021-02-02 23:03:12,163    SPIDER   INFO  Guardado en SELLERS_VISITED.txt
+2021-02-02 23:03:12,164    SPIDER   INFO  Registrado en outputs.json
+2021-02-02 23:03:12,164  scrapy.core.scraper  DEBUG  Scraped from <200 https://articulo.mercadolibre.com.ar/MLA-782696035-kit-bobina-cable-extreme-moto-ferrazzi-competicion-_JM?searchVariation=35692763582>
+{'time': datetime.datetime(2021, 2, 2, 22, 52, 55, 720565), 'seller_id': 261177599, 'data': {'id': 261177599, 'nickname': 'FERRAZZIAUTOMOVILSRL', 'permalink': 'http://perfil.mercadolibre.com.ar/FERRAZZIAUTOMOVILSRL', 'registration_date': '2017-06-19T08:33:39.000-04:00', 'seller_reputation': {'level_id': '5_green', 'power_seller_status': 'platinum', 'transactions': {'total': 3519, 'canceled': 227, 'period': 'historic', 'ratings': {'negative': 0, 'positive': 0.98, 'neutral': 0.02}, 'completed': 3292}, 'metrics': {'sales': {'period': '60 days', 'completed': 541}}}, 'tags': ['brand', 'user_info_verified', 'large_seller', 'mshops', 'credits_profile', 'messages_as_seller', 'messages_as_buyer'], 'eshop': None, 'cantidad_articulos': 621, 'cantidad_ventas': 1383, 'revenue': 5035929.69, 'categorias': ['Accesorios para Vehículos', 'Hogar, Muebles y Jardín']}, 'seller_address_2': {'id': '', 'comment': '', 'address_line': '', 'zip_code': '', 'country': {'id': 'AR', 'name': 'Argentina'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'city': {'id': 'TUxBQlZJTDQ4MzBa', 'name': 'Villa Lugano'}, 'latitude': '', 'longitude': ''}, 'seller_address': {'city': {'id': 'TUxBQlZJTDQ4MzBa', 'name': 'Villa Lugano'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'country': {'id': 'AR', 'name': 'Argentina'}, 'search_location': {'neighborhood': {'id': 'TUxBQlZJTDQ4MzBa', 'name': 'Villa Lugano'}, 'city': {'id': 'TUxBQ0NBUGZlZG1sYQ', 'name': 'Capital Federal'}, 'state': {'id': 'TUxBUENBUGw3M2E1', 'name': 'Capital Federal'}}, 'id': 288223056}}
+2021-02-02 23:03:12,174  scrapy.extensions.logstats   INFO  Crawled 15 pages (at 1 pages/min), scraped 3 items (at 1 items/min)
+2021-02-02 23:03:12,814  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-803335970-cubre-volante-para-auto-p-volkswagen-fox-polo-virtus-vento-_JM#position=11&type=item&tracking_id=5fa1e0f6-d91d-4264-aa1a-337fb5f39dcb> (referer: https://tuning.mercadolibre.com.ar/performance/)
+2021-02-02 23:03:13,155    SPIDER   INFO  NUEVO. (seller_id: 212838474)
+2021-02-02 23:03:13,156    SPIDER   INFO  Buscando resultados del 212838474
+2021-02-02 23:03:26,379    SPIDER   INFO  Se encontraron 1369 resultados del 212838474

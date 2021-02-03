@@ -1,0 +1,20 @@
+2021-02-02 22:36:57,808  src.utils   INFO  /Users/julian/Desktop/Projects/MELI Scraper/new pipeline/outputs/match-20210202.json
+2021-02-02 22:36:57,808  src.utils   INFO  /Users/julian/Desktop/Projects/MELI Scraper/new pipeline/outputs/output-20210202.json
+2021-02-02 22:36:57,809  src.utils   INFO  Se han descargado info de 24 sellers
+2021-02-02 22:36:57,809   PROCESS   INFO  Se ha matcheado 24 vendedores
+2021-02-02 22:36:57,809   PROCESS   INFO  Pre-procesando /Users/julian/Desktop/Projects/MELI Scraper/new pipeline/inputs/registro-nacional-sociedades-202009.csv
+2021-02-02 22:37:26,012   PROCESS   INFO  /Users/julian/Desktop/Projects/MELI Scraper/new pipeline/inputs/registro-nacional-sociedades-202009.csv procesado con exito
+2021-02-02 22:37:26,015   PROCESS   INFO  Output file exists and is readable. Matched so far: 1
+2021-02-02 22:37:26,016   PROCESS   INFO  Streamming <_io.TextIOWrapper name='outputs/output-20210202.json' mode='r' encoding='UTF-8'>
+2021-02-02 22:39:52,510  numexpr.utils   INFO  NumExpr defaulting to 4 threads.
+2021-02-02 22:39:52,929   PROCESS   INFO  Dumping match for 221659697... Matched: False
+2021-02-02 22:39:54,914   PROCESS   INFO  Dumping match for 206318353... Matched: False
+2021-02-02 22:41:41,309   PROCESS   INFO  Dumping match for 574928417... Matched: False
+2021-02-02 22:41:43,482   PROCESS   INFO  Dumping match for 72555338... Matched: False
+2021-02-02 22:42:10,192   PROCESS   INFO  Dumping match for 470375408... Matched: False
+2021-02-02 22:43:23,875   PROCESS   INFO  Dumping match for 60833866... Matched: True
+2021-02-02 22:43:25,804   PROCESS   INFO  Dumping match for 435469599... Matched: False
+2021-02-02 22:52:10,675   PROCESS   INFO  Dumping match for 80537835... Matched: False
+2021-02-02 22:52:10,827   PROCESS   INFO  Dumping match for 165990208... Matched: False
+2021-02-02 23:03:13,097   PROCESS   INFO  Dumping match for 313992186... Matched: True
+2021-02-02 23:03:13,254   PROCESS   INFO  Dumping match for 392841778... Matched: False
