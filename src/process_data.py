@@ -110,7 +110,6 @@ def match_sellers(row, empresas, THRESHOLD = 90):
             neighborhood_name = normalize_address(row['seller_address']['search_location']['neighborhood']['name'])
 
     retrieve_empresas = None
-    party_id = None
 
     if nickname:
 
