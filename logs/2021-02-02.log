@@ -1,0 +1,497 @@
+2021-02-02 19:30:16,234  scrapy.utils.log   INFO  Scrapy 2.3.0 started (bot: scrapybot)
+2021-02-02 19:30:16,265  scrapy.utils.log   INFO  Versions: lxml 4.4.1.0, libxml2 2.9.9, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.7.4 (default, Aug 13 2019, 15:17:50) - [Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.7, Platform Darwin-18.5.0-x86_64-i386-64bit
+2021-02-02 19:30:16,266  scrapy.utils.log  DEBUG  Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-02-02 19:30:16,270  scrapy.crawler   INFO  Overridden settings:
+{'CLOSESPIDER_TIMEOUT': 25200,
+ 'CONCURRENT_REQUESTS': 25,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'CONCURRENT_REQUESTS_PER_IP': 25,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 2,
+ 'LOG_ENABLED': False,
+ 'LOG_LEVEL': 'INFO',
+ 'RETRY_HTTP_CODES': [403],
+ 'RETRY_TIMES': 10}
+2021-02-02 19:30:16,289  scrapy.extensions.telnet   INFO  Telnet Password: e8f2fe31cf28eb69
+2021-02-02 19:30:16,316  scrapy.middleware   INFO  Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2021-02-02 19:30:16,378  scrapy.middleware   INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'random_useragent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-02-02 19:30:16,382  scrapy.middleware   INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-02-02 19:30:16,382  scrapy.middleware   INFO  Enabled item pipelines:
+[]
+2021-02-02 19:30:16,383  scrapy.core.engine   INFO  Spider opened
+2021-02-02 19:30:16,386  scrapy.extensions.logstats   INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-02-02 19:30:16,389  scrapy.extensions.telnet   INFO  Telnet console listening on 127.0.0.1:6024
+2021-02-02 19:30:16,395    SPIDER   INFO  Crawling 401 categories
+2021-02-02 19:30:16,395    SPIDER   INFO  
+https://vehiculos.mercadolibre.com.ar/accesorios/otros/
+https://listado.mercadolibre.com.ar/electrodomesticos/climatizacion/
+https://telefonia.mercadolibre.com.ar/handies-radiofrecuencia/
+https://electronica.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/tratamientos-belleza/
+https://videojuegos.mercadolibre.com.ar/consolas/
+https://motos.mercadolibre.com.ar/repuestos-cuatriciclos/
+https://autos.mercadolibre.com.ar/accesorios/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/depilacion/
+https://joyas.mercadolibre.com.ar/plumas-lapiceras-lujo/
+https://listado.mercadolibre.com.ar/electrodomesticos/cuidado-personal/
+https://instrumentos.mercadolibre.com.ar/teclados-pianos/
+https://electronica.mercadolibre.com.ar/cables/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-bebes/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/deportivos/
+https://servicios.mercadolibre.com.ar/oficinas/
+https://celulares.mercadolibre.com.ar/accesorios/
+https://listado.mercadolibre.com.ar/cursos/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/cuidado-salud/
+https://listado.mercadolibre.com.ar/industrias-oficinas/otros/
+https://vehiculos.mercadolibre.com.ar/neumaticos/
+https://deportes.mercadolibre.com.ar/slackline/
+https://juegos-juguetes.mercadolibre.com.ar/props-photo-booths/
+https://autos.mercadolibre.com.ar/repuestos/
+https://juegos-juguetes.mercadolibre.com.ar/titeres-marionetas/
+https://listado.mercadolibre.com.ar/textil-calzado/
+https://vehiculos.mercadolibre.com.ar/planes-de-ahorro/
+https://autos.mercadolibre.com.ar/accesorios-para-camiones/
+https://autos.mercadolibre.com.ar/seguridad-vehicular/
+https://coleccionables.mercadolibre.com.ar/articulos-fumadores/
+https://computacion.mercadolibre.com.ar/monitores/
+https://hogar.mercadolibre.com.ar/jardines-exteriores/
+https://hogar.mercadolibre.com.ar/organizacion/
+https://computacion.mercadolibre.com.ar/estabilizadores-ups/
+https://instrumentos.mercadolibre.com.ar/metronomos/
+https://camaras-digitales.mercadolibre.com.ar/albumes-portarretratos/
+https://juegos-juguetes.mercadolibre.com.ar/bloques-construccion/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/mobiliario-cocinas/
+https://libros.mercadolibre.com.ar/catalogos/
+https://videojuegos.mercadolibre.com.ar/otros/
+https://juegos-juguetes.mercadolibre.com.ar/casas-carpas-ninos/
+https://coleccionables.mercadolibre.com.ar/monedas-billetes/
+https://deportes.mercadolibre.com.ar/montanismo-trekking/
+https://telefonia.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/animales-mascotas/aves/
+https://computacion.mercadolibre.com.ar/lectores-scanners/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/otros/
+https://electronica.mercadolibre.com.ar/controles-remotos/
+https://listado.mercadolibre.com.ar/comida-preparada-catering/
+https://servicios.mercadolibre.com.ar/cursos-clases/
+https://juegos-juguetes.mercadolibre.com.ar/juegos-salon/
+https://inmuebles.mercadolibre.com.ar/oficinas/
+https://electronica.mercadolibre.com.ar/audio/
+https://listado.mercadolibre.com.ar/esculturas/
+https://juegos-juguetes.mercadolibre.com.ar/peluches/
+https://listado.mercadolibre.com.ar/agro-maquinas-herramientas/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/disfraces/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/series-tv/
+https://deportes.mercadolibre.com.ar/camping-caza-pesca/
+https://listado.mercadolibre.com.ar/alimentos-bebidas/otros/
+https://listado.mercadolibre.com.ar/disfraces-cotillon-souvenirs/
+https://listado.mercadolibre.com.ar/bebidas/
+https://vehiculos.mercadolibre.com.ar/acc-repuestos-nauticos/
+https://coleccionables.mercadolibre.com.ar/figuritas-albumes-cromos/
+https://listado.mercadolibre.com.ar/exposiciones/
+https://telefonia.mercadolibre.com.ar/tarifadores-cabinas/
+https://listado.mercadolibre.com.ar/pirotecnia/
+https://listado.mercadolibre.com.ar/agro-generadores-energia/
+https://electronica.mercadolibre.com.ar/accesorios-tv/
+https://juegos-juguetes.mercadolibre.com.ar/aire-libre-y-agua/
+https://motos.mercadolibre.com.ar/
+https://listado.mercadolibre.com.ar/embalaje-logistica/
+https://listado.mercadolibre.com.ar/electrodomesticos/otros/
+https://listado.mercadolibre.com.ar/perfumes-fragancias/
+https://juegos-juguetes.mercadolibre.com.ar/mesas-sillas-ninos/
+https://juegos-juguetes.mercadolibre.com.ar/dibujo-pintura-manualidades/
+https://deportes.mercadolibre.com.ar/juegos-salon/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/masajes/
+https://libros.mercadolibre.com.ar/manga/
+https://listado.mercadolibre.com.ar/arte-artesanias/arte/
+https://ropa.mercadolibre.com.ar/uniformes/
+https://hogar.mercadolibre.com.ar/adornos-decoracion-del/
+https://instrumentos.mercadolibre.com.ar/parlantes-bafles/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/recitales/
+https://listado.mercadolibre.com.ar/animales-mascotas/perros/
+https://autos.mercadolibre.com.ar/coleccion/
+https://ropa.mercadolibre.com.ar/remeras-musculosas-chombas/
+https://vehiculos.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/otras-categorias/adultos/
+https://joyas.mercadolibre.com.ar/relojes/
+https://juegos-juguetes.mercadolibre.com.ar/instrumentos-musicales/
+https://listado.mercadolibre.com.ar/electrodomesticos/dispensadores-purificadores/
+https://celulares.mercadolibre.com.ar/smartwatches-accesorios/
+https://computacion.mercadolibre.com.ar/limpieza-pcs/
+https://vehiculos.mercadolibre.com.ar/llantas/
+https://deportes.mercadolibre.com.ar/paintball/
+https://listado.mercadolibre.com.ar/publicidad-promocion/
+https://telefonia.mercadolibre.com.ar/ip/
+https://computacion.mercadolibre.com.ar/cajas-sobres-porta-cds/
+https://listado.mercadolibre.com.ar/kits-criminalistica/
+https://vehiculos.mercadolibre.com.ar/colectivos/
+https://inmuebles.mercadolibre.com.ar/terrenos-lotes/
+https://listado.mercadolibre.com.ar/agro-insumos-agricolas/
+https://listado.mercadolibre.com.ar/bebes/comida/
+https://camaras-digitales.mercadolibre.com.ar/revelado-laboratorio/
+https://servicios.mercadolibre.com.ar/delivery/
+https://inmuebles.mercadolibre.com.ar/fondo-de-comercio/
+https://camaras-digitales.mercadolibre.com.ar/repuestos-camaras/
+https://deportes.mercadolibre.com.ar/natacion/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-bromas/
+https://listado.mercadolibre.com.ar/industrias-oficinas/equipamiento-oficinas/
+https://listado.mercadolibre.com.ar/gastronomia-hoteleria/
+https://vehiculos.mercadolibre.com.ar/repuestos-maquinaria-pesada/
+https://computacion.mercadolibre.com.ar/software/
+https://listado.mercadolibre.com.ar/hornos-crematorios/
+https://joyas.mercadolibre.com.ar/piedras-preciosas/
+https://celulares.mercadolibre.com.ar/
+https://computacion.mercadolibre.com.ar/almacenamiento/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/otros/
+https://listado.mercadolibre.com.ar/espejos-venecitas/
+https://vehiculos.mercadolibre.com.ar/nautica/
+https://listado.mercadolibre.com.ar/bebes/salud/
+https://electronica.mercadolibre.com.ar/fundas-bolsos/
+https://listado.mercadolibre.com.ar/animales-mascotas/otros/
+https://instrumentos.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/bebes/seguridad/
+https://ropa.mercadolibre.com.ar/lotes/
+https://inmuebles.mercadolibre.com.ar/camas-nauticas/
+https://deportes.mercadolibre.com.ar/fitness-musculacion/
+https://deportes.mercadolibre.com.ar/golf/
+https://hogar.mercadolibre.com.ar/cortinas-accesorios/
+https://servicios.mercadolibre.com.ar/otros/
+https://deportes.mercadolibre.com.ar/tenis-padel-squash/
+https://deportes.mercadolibre.com.ar/equitacion-polo/
+https://hogar.mercadolibre.com.ar/colchones-sommiers/
+https://inmuebles.mercadolibre.com.ar/bovedas-nichos-parcelas/
+https://juegos-juguetes.mercadolibre.com.ar/munecos-munecas/
+https://deportes.mercadolibre.com.ar/buceo/
+https://instrumentos.mercadolibre.com.ar/baterias-percusion/
+https://coleccionables.mercadolibre.com.ar/filatelia/
+https://listado.mercadolibre.com.ar/pintureria/
+https://servicios.mercadolibre.com.ar/transporte/
+https://listado.mercadolibre.com.ar/disfraces-cotillon-invitaciones-tarjetas/
+https://deportes.mercadolibre.com.ar/basquet/
+https://listado.mercadolibre.com.ar/animales-mascotas/peces/
+https://vehiculos.mercadolibre.com.ar/autos-chocados-averiados/
+https://servicios.mercadolibre.com.ar/fotografia-musica-cine/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/cotillon/
+https://listado.mercadolibre.com.ar/animales-mascotas/roedores/
+https://libros.mercadolibre.com.ar/otros/
+https://vehiculos.mercadolibre.com.ar/audio/
+https://servicios.mercadolibre.com.ar/fiestas-eventos/
+https://juegos-juguetes.mercadolibre.com.ar/juegos-mesa-cartas/
+https://computacion.mercadolibre.com.ar/impresion/
+https://deportes.mercadolibre.com.ar/ropa-deportiva/
+https://deportes.mercadolibre.com.ar/handball/
+https://deportes.mercadolibre.com.ar/rugby/
+https://listado.mercadolibre.com.ar/herramientas-industriale/
+https://listado.mercadolibre.com.ar/insumos-tatuajes/
+https://juegos-juguetes.mercadolibre.com.ar/peloteros-y-castillos/
+https://ropa.mercadolibre.com.ar/vestidos/
+https://computacion.mercadolibre.com.ar/componentes-pc/
+https://ropa.mercadolibre.com.ar/otros/
+https://libros.mercadolibre.com.ar/revistas/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/maquillaje/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/otras/
+https://listado.mercadolibre.com.ar/libreria/
+https://videojuegos.mercadolibre.com.ar/accesorios-consolas/
+https://listado.mercadolibre.com.ar/industrias-oficinas/arquitectura-y-diseno/
+https://listado.mercadolibre.com.ar/electrodomesticos/coccion/
+https://listado.mercadolibre.com.ar/bebes/articulos-maternidad/
+https://vehiculos.mercadolibre.com.ar/maquinaria-vial/
+https://inmuebles.mercadolibre.com.ar/otros/
+https://joyas.mercadolibre.com.ar/repuestos-relojes/
+https://deportes.mercadolibre.com.ar/windsurf/
+https://instrumentos.mercadolibre.com.ar/estudio-grabacion/
+https://hogar.mercadolibre.com.ar/banos/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/electricidad/
+https://juegos-juguetes.mercadolibre.com.ar/hobbies/
+https://videojuegos.mercadolibre.com.ar/accesorios-pc-gaming/
+https://deportes.mercadolibre.com.ar/patin-gimnasia-danza/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/coleccion/
+https://camaras-digitales.mercadolibre.com.ar/filmadoras-camaras-accion/
+https://listado.mercadolibre.com.ar/bebes/otros/
+https://inmuebles.mercadolibre.com.ar/quintas/
+https://deportes.mercadolibre.com.ar/skateboard/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/otros/
+https://listado.mercadolibre.com.ar/alimentos-bebidas/comestibles/
+https://servicios.mercadolibre.com.ar/asesoramiento-contable-legal/
+https://inmuebles.mercadolibre.com.ar/casas/
+https://computacion.mercadolibre.com.ar/pc-escritorio/
+https://camaras-digitales.mercadolibre.com.ar/lentes-filtros/
+https://ropa.mercadolibre.com.ar/enteritos/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/cuidado-cabello/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/construccion/
+https://listado.mercadolibre.com.ar/animales-mascotas/conejos/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/barberia/
+https://electronica.mercadolibre.com.ar/componentes-electronicos/
+https://ropa.mercadolibre.com.ar/deportiva/
+https://instrumentos.mercadolibre.com.ar/instrumentos-viento/
+https://electronica.mercadolibre.com.ar/pilas-cargadores-baterias/
+https://listado.mercadolibre.com.ar/piezas-llaveros/
+https://listado.mercadolibre.com.ar/licencias-taxis/
+https://computacion.mercadolibre.com.ar/cables-hubs-usb/
+https://servicios.mercadolibre.com.ar/hogar-construccion/
+https://deportes.mercadolibre.com.ar/monopatines-scooters/
+https://servicios.mercadolibre.com.ar/tecnologia/
+https://listado.mercadolibre.com.ar/bebes/ropa-calzado/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/farmacia/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-antiestres-e-ingenio/
+https://listado.mercadolibre.com.ar/moldes-jabones/
+https://computacion.mercadolibre.com.ar/otros/
+https://libros.mercadolibre.com.ar/comics-historietas/
+https://relojes.mercadolibre.com.ar/pulsometros-cronometros/
+https://listado.mercadolibre.com.ar/bebes/corralitos/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/otros/
+https://servicios.mercadolibre.com.ar/mantenimiento-de-vehiculos/
+https://listado.mercadolibre.com.ar/merceria/
+https://servicios.mercadolibre.com.ar/belleza-cuidado-personal/
+https://listado.mercadolibre.com.ar/bebes/lactancia-alimentacion/
+https://juegos-juguetes.mercadolibre.com.ar/juegos-agua-playa/
+https://electronica.mercadolibre.com.ar/drones-accesorios/
+https://deportes.mercadolibre.com.ar/esgrima/
+https://coleccionables.mercadolibre.com.ar/militaria-afines/
+https://listado.mercadolibre.com.ar/repuestos-accesorios/
+https://coleccionables.mercadolibre.com.ar/posters/
+https://listado.mercadolibre.com.ar/otras-categorias/mangas-viento/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/medico/
+https://listado.mercadolibre.com.ar/criptomonedas/
+https://ropa.mercadolibre.com.ar/ropa-calzado-bebes/
+https://camaras-digitales.mercadolibre.com.ar/instrumentos-opticos/
+https://listado.mercadolibre.com.ar/industrias-oficinas/uniformes/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/higiene-personal/
+https://deportes.mercadolibre.com.ar/badminton/
+https://ropa.mercadolibre.com.ar/pantalones-jeans-joggings/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/musica/
+https://camaras-digitales.mercadolibre.com.ar/cables/
+https://vehiculos.mercadolibre.com.ar/camiones/
+https://deportes.mercadolibre.com.ar/wakeboard-esqui-acuatico/
+https://camaras-digitales.mercadolibre.com.ar/accesorios/
+https://ropa.mercadolibre.com.ar/camperas-tapados-trenchs/
+https://juegos-juguetes.mercadolibre.com.ar/electronicos-ninos/
+https://camaras-digitales.mercadolibre.com.ar/drones-accesorios/
+https://listado.mercadolibre.com.ar/equipamiento-comercios/
+https://inmuebles.mercadolibre.com.ar/locales/
+https://ropa.mercadolibre.com.ar/bermudas-shorts/
+https://ropa.mercadolibre.com.ar/polleras/
+https://listado.mercadolibre.com.ar/insumos-ganaderos/
+https://videojuegos.mercadolibre.com.ar/repuestos-consolas/
+https://listado.mercadolibre.com.ar/arte-artesanias/otros/
+https://bolsos.mercadolibre.com.ar/equipaje-carteras/
+https://computacion.mercadolibre.com.ar/proyectores-pantallas/
+https://deportes.mercadolibre.com.ar/pilates-y-yoga/
+https://computacion.mercadolibre.com.ar/tablets-accesorios/
+https://deportes.mercadolibre.com.ar/artes-marciales-y-boxeo/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/terapias-alternativas/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-y-cotillon/decoracion-para-fiestas/
+https://listado.mercadolibre.com.ar/refrigeracion/
+https://autos.mercadolibre.com.ar/servicio-programado/
+https://listado.mercadolibre.com.ar/otras-categorias/gift-cards/
+https://juegos-juguetes.mercadolibre.com.ar/espuma-serpentina-confeti/
+https://ropa.mercadolibre.com.ar/ropa-interior-y-de-dormir/
+https://joyas.mercadolibre.com.ar/exhibidores-joyeros/
+https://servicios.mercadolibre.com.ar/mascotas/
+https://deportes.mercadolibre.com.ar/kitesurf/
+https://joyas.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/herramientas/
+https://listado.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/frescos/
+https://electronica.mercadolibre.com.ar/video/
+https://listado.mercadolibre.com.ar/insectos/
+https://computacion.mercadolibre.com.ar/perifericos-pc/
+https://inmuebles.mercadolibre.com.ar/depositos-y-galpones/
+https://joyas.mercadolibre.com.ar/joyas-bijouterie/
+https://listado.mercadolibre.com.ar/bebes/bano/
+https://joyas.mercadolibre.com.ar/insumos-joyeria/
+https://zapatos.mercadolibre.com.ar/calzado/
+https://ropa.mercadolibre.com.ar/trajes/
+https://inmuebles.mercadolibre.com.ar/campos/
+https://listado.mercadolibre.com.ar/seguridad-laboral/
+https://ropa.mercadolibre.com.ar/blusas/
+https://ropa.mercadolibre.com.ar/saquitos-sweaters-chalecos/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/articulos-peluqueria/
+https://listado.mercadolibre.com.ar/entradas-para-eventos/teatro/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/manicuria-pedicuria/
+https://videojuegos.mercadolibre.com.ar/videojuegos/
+https://instrumentos.mercadolibre.com.ar/equipos-dj-accesorios/
+https://listado.mercadolibre.com.ar/antiguedades/
+https://listado.mercadolibre.com.ar/plomeria/
+https://ropa.mercadolibre.com.ar/trajes-de-bano/
+https://deportes.mercadolibre.com.ar/voley/
+https://deportes.mercadolibre.com.ar/tiro-deportivo/
+https://listado.mercadolibre.com.ar/animales-mascotas/gatos/
+https://listado.mercadolibre.com.ar/grafica-e-impresion/
+https://juegos-juguetes.mercadolibre.com.ar/juguetes-oficios/
+https://relojes.mercadolibre.com.ar/smartwatch/
+https://instrumentos.mercadolibre.com.ar/microfonos-amplificadores/
+https://computacion.mercadolibre.com.ar/laptops/
+https://inmuebles.mercadolibre.com.ar/cocheras/
+https://listado.mercadolibre.com.ar/animales-mascotas/caballos/
+https://vehiculos.mercadolibre.com.ar/limpieza/
+https://listado.mercadolibre.com.ar/pequenos-electrodomesticos/
+https://juegos-juguetes.mercadolibre.com.ar/armas-lanzadores-juguete/
+https://tuning.mercadolibre.com.ar/performance/
+https://telefonia.mercadolibre.com.ar/fija-e-inalambrica/
+https://computacion.mercadolibre.com.ar/accesorios-pc-gaming/
+https://listado.mercadolibre.com.ar/bebes/higiene-cuidado/
+https://inmuebles.mercadolibre.com.ar/tiempo-compartido/
+https://electronica.mercadolibre.com.ar/repuestos-tv/
+https://juegos-juguetes.mercadolibre.com.ar/vehiculos-juguete/
+https://hogar.mercadolibre.com.ar/iluminacion/
+https://listado.mercadolibre.com.ar/banos-sanitarios/
+https://motos.mercadolibre.com.ar/accesorios/
+https://deportes.mercadolibre.com.ar/suplementos-shakers/
+https://computacion.mercadolibre.com.ar/conectividad-redes/
+https://listado.mercadolibre.com.ar/repuestos-maquinaria-agricola/
+https://autos.mercadolibre.com.ar/navegadores-gps/
+https://deportes.mercadolibre.com.ar/esqui-snowboard/
+https://servicios.mercadolibre.com.ar/medicina-salud/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/electrodomesticos-belleza/
+https://inmuebles.mercadolibre.com.ar/consultorios/
+https://listado.mercadolibre.com.ar/industrias-oficinas/industria-agropecuaria/otros/
+https://hogar.mercadolibre.com.ar/otros/
+https://hogar.mercadolibre.com.ar/bazar-cocina/
+https://listado.mercadolibre.com.ar/infraestructura-rural/
+https://inmuebles.mercadolibre.com.ar/departamentos/
+https://ropa.mercadolibre.com.ar/camisas/
+https://ropa.mercadolibre.com.ar/ropa-danza-patinaje/
+https://deportes.mercadolibre.com.ar/futbol-americano/
+https://servicios.mercadolibre.com.ar/ropa-moda/
+https://computacion.mercadolibre.com.ar/palms-handhelds/
+https://servicios.mercadolibre.com.ar/comunicacion-diseno/
+https://electronica.mercadolibre.com.ar/accesorios-audio-y-video/
+https://listado.mercadolibre.com.ar/otras-categorias/esoterismo/
+https://juegos-juguetes.mercadolibre.com.ar/disfraces-cotillon-descartables-fiestas/
+https://deportes.mercadolibre.com.ar/canoas-kayaks-e-inflables/
+https://deportes.mercadolibre.com.ar/otros/
+https://hogar.mercadolibre.com.ar/seguridad/
+https://juegos-juguetes.mercadolibre.com.ar/patines-patinetas/
+https://camaras-digitales.mercadolibre.com.ar/otros/
+https://electronica.mercadolibre.com.ar/media-streaming/
+https://deportes.mercadolibre.com.ar/pulsometros-cronometros/
+https://deportes.mercadolibre.com.ar/softball-beisbol/
+https://listado.mercadolibre.com.ar/lavado/
+https://servicios.mercadolibre.com.ar/viajes-turismo/
+https://juegos-juguetes.mercadolibre.com.ar/kits-imprimibles-fiestas/
+https://listado.mercadolibre.com.ar/musica-peliculas-series/peliculas/
+https://vehiculos.mercadolibre.com.ar/semirremolques/
+https://vehiculos.mercadolibre.com.ar/maquinaria-agricola/
+https://listado.mercadolibre.com.ar/pisos-revestimientos/
+https://listado.mercadolibre.com.ar/agro-animales/
+https://deportes.mercadolibre.com.ar/parapente/
+https://celulares.mercadolibre.com.ar/lentes-realidad-virtual/
+https://deportes.mercadolibre.com.ar/hockey/
+https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/cuidado-piel/
+https://deportes.mercadolibre.com.ar/futbol/
+https://listado.mercadolibre.com.ar/ortopedia/
+https://instrumentos.mercadolibre.com.ar/pedales-accesorios/
+https://ropa.mercadolibre.com.ar/accesorios/
+https://videojuegos.mercadolibre.com.ar/flippers-y-arcade/
+https://deportes.mercadolibre.com.ar/ciclismo/
+https://instrumentos.mercadolibre.com.ar/partituras-y-letras/
+https://listado.mercadolibre.com.ar/bebes/andadores-vehiculos/
+https://hogar.mercadolibre.com.ar/textiles-decoracion/
+https://hogar.mercadolibre.com.ar/muebles/
+https://listado.mercadolibre.com.ar/otras-categorias/coberturas-extendidas/
+https://electronica.mercadolibre.com.ar/proyectores-pantallas/
+https://listado.mercadolibre.com.ar/herramientas-y-construccion/otros/
+https://televisores.mercadolibre.com.ar/tvs/
+https://vehiculos.mercadolibre.com.ar/motorhomes/
+https://listado.mercadolibre.com.ar/salud-y-equipamiento-medico/suplementos-alimenticios/
+https://listado.mercadolibre.com.ar/bebes/paseo/
+https://listado.mercadolibre.com.ar/bebes/juegos-juguetes/
+https://coleccionables.mercadolibre.com.ar/coleccionables-deportes/
+https://listado.mercadolibre.com.ar/bebes/chupetes-mordillos/
+https://listado.mercadolibre.com.ar/aberturas/
+https://deportes.mercadolibre.com.ar/surf-bodyboard/
+https://deportes.mercadolibre.com.ar/zapatillas/
+https://listado.mercadolibre.com.ar/movilidad/
+https://listado.mercadolibre.com.ar/bebes/cuarto/
+https://juegos-juguetes.mercadolibre.com.ar/vehiculos-montables-ninos/
+https://listado.mercadolibre.com.ar/insumos-hacer-velas/
+https://joyas.mercadolibre.com.ar/piercings/
+https://instrumentos.mercadolibre.com.ar/instrumentos-cuerdas/
+https://camaras-digitales.mercadolibre.com.ar/camaras/
+https://listado.mercadolibre.com.ar/eventos-a-beneficio/
+https://computacion.mercadolibre.com.ar/accesorios-antiestatica/
+https://celulares.mercadolibre.com.ar/repuestos/
+https://juegos-juguetes.mercadolibre.com.ar/otros/
+https://listado.mercadolibre.com.ar/animales-mascotas/reptiles-anfibios/
+https://autos.mercadolibre.com.ar/
+https://inmuebles.mercadolibre.com.ar/ph/
+https://vehiculos.mercadolibre.com.ar/gnc/
+https://hogar.mercadolibre.com.ar/cuidado-del-lavanderia/
+https://ropa.mercadolibre.com.ar/buzos-hoodies/
+https://libros.mercadolibre.com.ar/libros/
+https://listado.mercadolibre.com.ar/equipamiento-medic/
+https://servicios.mercadolibre.com.ar/imprenta/
+https://ropa.mercadolibre.com.ar/calzas/
+https://autos.mercadolibre.com.ar/herramientas/
+https://tuning.mercadolibre.com.ar/tuning/
+2021-02-02 19:30:17,295  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/depilacion/> (referer: None)
+2021-02-02 19:30:17,580  scrapy.core.engine  DEBUG  Crawled (200) <GET https://vehiculos.mercadolibre.com.ar/accesorios/otros/> (referer: None)
+2021-02-02 19:30:17,587  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/electrodomesticos/climatizacion/> (referer: None)
+2021-02-02 19:30:17,599  scrapy.core.engine  DEBUG  Crawled (200) <GET https://servicios.mercadolibre.com.ar/oficinas/> (referer: None)
+2021-02-02 19:30:17,617  scrapy.core.engine  DEBUG  Crawled (200) <GET https://electronica.mercadolibre.com.ar/otros/> (referer: None)
+2021-02-02 19:30:17,628  scrapy.core.engine  DEBUG  Crawled (200) <GET https://joyas.mercadolibre.com.ar/plumas-lapiceras-lujo/> (referer: None)
+2021-02-02 19:30:17,742  scrapy.core.engine  DEBUG  Crawled (200) <GET https://juegos-juguetes.mercadolibre.com.ar/juguetes-bebes/> (referer: None)
+2021-02-02 19:30:17,795  scrapy.core.engine  DEBUG  Crawled (200) <GET https://deportes.mercadolibre.com.ar/slackline/> (referer: None)
+2021-02-02 19:30:17,998  scrapy.core.engine  DEBUG  Crawled (200) <GET https://instrumentos.mercadolibre.com.ar/teclados-pianos/> (referer: None)
+2021-02-02 19:30:18,005  scrapy.core.engine  DEBUG  Crawled (200) <GET https://telefonia.mercadolibre.com.ar/handies-radiofrecuencia/> (referer: None)
+2021-02-02 19:30:18,068  scrapy.spidermiddlewares.offsite  DEBUG  Filtered offsite request to 'servicio.mercadolibre.com.ar': <GET https://servicio.mercadolibre.com.ar/MLA-895867937-alquiler-de-maquinas-expendedoras-de-cafe-comodato-nescafe-_JM#position=1&type=item&tracking_id=6955185b-14af-4d50-9875-ff71408661fc>
+2021-02-02 19:30:18,150  scrapy.core.engine  DEBUG  Crawled (200) <GET https://autos.mercadolibre.com.ar/accesorios/> (referer: None)
+2021-02-02 19:30:18,211  scrapy.spidermiddlewares.offsite  DEBUG  Filtered offsite request to 'juegos-juguetes.mercadolibre.com.ar': <GET https://juegos-juguetes.mercadolibre.com.ar/juguetes-bebes/_Desde_51>
+2021-02-02 19:30:18,344  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-665679803-bandas-depilatorias-descartables-depimiel-x-100-unidades-_JM#position=50&type=item&tracking_id=5363891c-6276-4feb-91a7-65b735c6e6ad> (referer: https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/depilacion/)
+2021-02-02 19:30:18,349  scrapy.core.engine  DEBUG  Crawled (200) <GET https://motos.mercadolibre.com.ar/repuestos-cuatriciclos/> (referer: None)
+2021-02-02 19:30:18,355  scrapy.core.engine  DEBUG  Crawled (200) <GET https://videojuegos.mercadolibre.com.ar/consolas/> (referer: None)
+2021-02-02 19:30:18,541  scrapy.core.engine  DEBUG  Crawled (200) <GET https://celulares.mercadolibre.com.ar/accesorios/> (referer: None)
+2021-02-02 19:30:18,730  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/tratamientos-belleza/> (referer: None)
+2021-02-02 19:30:19,027    SPIDER   INFO  NUEVO. (seller_id: 193644313)
+2021-02-02 19:30:19,028    SPIDER   INFO  Buscando resultados del 193644313
+2021-02-02 19:30:35,697    SPIDER   INFO  Se encontraron 1480 resultados del 193644313
+                                                                                                                                                                                                                                                     2021-02-02 19:36:43,117    SPIDER   INFO  Guardado en SELLERS_VISITED.txt
+2021-02-02 19:36:43,117    SPIDER   INFO  Registrado en outputs.json
+2021-02-02 19:36:43,117  scrapy.core.scraper  DEBUG  Scraped from <200 https://articulo.mercadolibre.com.ar/MLA-776595948-estatua-de-la-justicia-petit-bronce-regalo-para-abogados-_JM>
+{'time': datetime.datetime(2021, 2, 2, 19, 29, 50, 622352), 'seller_id': 105643495, 'data': {'id': 105643495, 'nickname': 'EDICIONESDYD', 'permalink': 'http://perfil.mercadolibre.com.ar/EDICIONESDYD', 'registration_date': '2013-03-18T12:40:21.000-04:00', 'seller_reputation': {'level_id': '5_green', 'power_seller_status': 'gold', 'transactions': {'total': 2577, 'canceled': 108, 'period': 'historic', 'ratings': {'negative': 0.02, 'positive': 0.97, 'neutral': 0.01}, 'completed': 2469}, 'metrics': {'sales': {'period': '60 days', 'completed': 220}}}, 'tags': ['normal', 'user_info_verified', 'credits_priority_2', 'eshop', 'credits_profile', 'messages_as_seller', 'messages_as_buyer'], 'eshop': {'nick_name': 'EDICIONESDYD', 'eshop_rubro': None, 'eshop_id': 260241, 'eshop_locations': [], 'site_id': 'MLA', 'eshop_logo_url': 'http://resources.mlstatic.com/eshops/105643495v2b6a58.png', 'eshop_status_id': 1, 'seller': 105643495, 'eshop_experience': 0}, 'cantidad_articulos': 481, 'cantidad_ventas': 2191, 'revenue': 4719944.78, 'categorias': ['Libros, Revistas y Comics', 'Antigüedades y Colecciones', 'Arte, Librería y Mercería']}, 'seller_address_2': {'id': '', 'comment': '', 'address_line': '', 'zip_code': '', 'country': {'id': 'AR', 'name': 'Argentina'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'city': {'id': 'TUxBQlNBTjgzMjRa', 'name': 'San Nicolás'}, 'latitude': '', 'longitude': ''}, 'seller_address': {'city': {'id': 'TUxBQlNBTjgzMjRa', 'name': 'San Nicolás'}, 'state': {'id': 'AR-C', 'name': 'Capital Federal'}, 'country': {'id': 'AR', 'name': 'Argentina'}, 'search_location': {'neighborhood': {'id': 'TUxBQlNBTjgzMjRa', 'name': 'San Nicolás'}, 'city': {'id': 'TUxBQ0NBUGZlZG1sYQ', 'name': 'Capital Federal'}, 'state': {'id': 'TUxBUENBUGw3M2E1', 'name': 'Capital Federal'}}, 'id': 172368449}}
+2021-02-02 19:36:43,125  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/agro-animales/> (failed 1 times): [<twisted.python.failure.Failure OpenSSL.SSL.Error: [('SSL routines', 'ssl3_get_record', 'decryption failed or bad record mac')]>]
+2021-02-02 19:36:43,126  scrapy.core.engine   INFO  Closing spider (shutdown)
+2021-02-02 19:36:43,204  scrapy.extensions.logstats   INFO  Crawled 13 pages (at 13 pages/min), scraped 1 items (at 1 items/min)
+2021-02-02 19:36:43,204  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://listado.mercadolibre.com.ar/perfumes-fragancias/> (failed 1 times): User timeout caused connection failure: Getting https://listado.mercadolibre.com.ar/perfumes-fragancias/ took longer than 180.0 seconds..
+2021-02-02 19:36:43,205  scrapy.downloadermiddlewares.retry  DEBUG  Retrying <GET https://electronica.mercadolibre.com.ar/drones-accesorios/_Desde_51_NoIndex_True> (failed 1 times): User timeout caused connection failure: Getting https://electronica.mercadolibre.com.ar/drones-accesorios/_Desde_51_NoIndex_True took longer than 180.0 seconds..
+2021-02-02 19:36:43,251  scrapy.dupefilters  DEBUG  Filtered duplicate request: <GET https://articulo.mercadolibre.com.ar/MLA-776595948-estatua-de-la-justicia-petit-bronce-regalo-para-abogados-_JM#root-app> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2021-02-02 19:36:43,695  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/hornos-crematorios/> (referer: None)
+2021-02-02 19:36:44,445  scrapy.core.engine  DEBUG  Crawled (200) <GET https://servicios.mercadolibre.com.ar/comunicacion-diseno/> (referer: None)
+2021-02-02 19:36:45,542  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/disfraces-cotillon-souvenirs/> (referer: None)
+2021-02-02 19:36:46,117  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/pequenos-electrodomesticos/> (referer: None)
+2021-02-02 19:36:46,354  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/bebes/salud/> (referer: None)
+2021-02-02 19:36:47,616  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/industrias-oficinas/otros/> (referer: None)
+2021-02-02 19:36:48,204  scrapy.extensions.logstats   INFO  Crawled 19 pages (at 6 pages/min), scraped 1 items (at 0 items/min)
+2021-02-02 19:36:49,581  scrapy.core.engine  DEBUG  Crawled (200) <GET https://computacion.mercadolibre.com.ar/software/> (referer: None)
+2021-02-02 19:36:50,209  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/pirotecnia/> (referer: None)
+2021-02-02 19:36:51,819  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/equipamiento-comercios/> (referer: None)
+2021-02-02 19:36:53,039  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/grafica-e-impresion/> (referer: None)
+2021-02-02 19:36:54,690  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/musica-peliculas-series/musica/> (referer: None)
+2021-02-02 19:36:55,863  scrapy.core.engine  DEBUG  Crawled (200) <GET https://listado.mercadolibre.com.ar/belleza-y-cuidado-personal/tratamientos-belleza/> (referer: None)
+2021-02-02 19:36:57,692  scrapy.core.engine  DEBUG  Crawled (200) <GET https://inmuebles.mercadolibre.com.ar/tiempo-compartido/> (referer: None)
+2021-02-02 19:36:58,242  scrapy.core.engine  DEBUG  Crawled (200) <GET https://articulo.mercadolibre.com.ar/MLA-859237399-pintura-a-la-tiza-chalk-vs-colores-pote-x-900cc-eqarte-_JM#position=1&type=item&tracking_id=33e90af5-4f44-4e21-a788-7a20ab67b578> (referer: https://listado.mercadolibre.com.ar/arte-artesanias/otros/)
+2021-02-02 19:36:58,737    SPIDER   INFO  NUEVO. (seller_id: 207283579)
+2021-02-02 19:36:58,749    SPIDER   INFO  Buscando resultados del 207283579
+2021-02-02 19:37:02,460    SPIDER   INFO  Se encontraron 341 resultados del 207283579
