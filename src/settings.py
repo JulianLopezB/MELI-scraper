@@ -4,11 +4,11 @@ import os
 input_path = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) / 'inputs'
 
 CREDENTIALS = {
-                  'CLIENT_ID': '7009568980355151',
-                  'REDIRECT_URI': 'https://mercadolibre.com.ar',
-                  'SECRET_KEY': 'z6lCbQU6E6GfbS8EQwOLRXPeTuRkGhIK',
-                  'SERVER_GENERATED_AUTHORIZATION_CODE': 'TG-601838957eb5ec000603e3b0-49662383',
-                  'REFRESH_TOKEN': 'TG-601838d2513b3600060bd790-49662383'
+                  'CLIENT_ID': '',
+                  'REDIRECT_URI': '',
+                  'SECRET_KEY': '',
+                  'SERVER_GENERATED_AUTHORIZATION_CODE': '',
+                  'REFRESH_TOKEN': ''
         }
 
 
