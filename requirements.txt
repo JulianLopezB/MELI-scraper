@@ -1,0 +1,7 @@
+Scrapy==2.3.0
+numpy==1.19.1
+Unidecode==1.1.1
+requests==2.24.0
+fuzzywuzzy==0.18.0
+pandas==1.1.2
+beautifulsoup4==4.9.3
