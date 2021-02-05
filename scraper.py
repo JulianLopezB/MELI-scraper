@@ -92,11 +92,9 @@ class MercadoLibreCrawler(CrawlSpider):
     name = 'mercadoLibre'
 
 
-    #start_urls = STARTING_URLS
     allowed_domains = ALLOWED_DOMAINS
 
     start_time = time()
-    #ACCESS_TOKEN, REFRESH_TOKEN = get_token(CLIENT_ID, SECRET_KEY, SERVER_GENERATED_AUTHORIZATION_CODE, REDIRECT_URI)
     response = refresh_token(CLIENT_ID, SECRET_KEY, REFRESH_TOKEN)
 
     if not 'error' in response.keys():
@@ -108,14 +106,9 @@ class MercadoLibreCrawler(CrawlSpider):
         raise ValueError(f"{response['message']}")
 
 
-    #logger.info(f'ACCESS TOKEN: {ACCESS_TOKEN}')
-    #logger.info(f'REFRESH TOKEN: {REFRESH_TOKEN}')
 
     download_delay = 1
 
-    #logger.info(f'Starting URLs:')
-    #for url in STARTING_URLS:
-    #    logger.info(url)
 
     # Reglas
     rules = (
@@ -137,11 +130,7 @@ class MercadoLibreCrawler(CrawlSpider):
         for start_url in STARTING_URLS:
             yield Request(url=start_url, meta={"start_url": start_url})
 
-    # def parse(self, response):
-    #     print(f'Scraping {response.meta["start_url"]}')
-    #     logger.info(f'Scraping {response.meta["start_url"]}')
-    #     print(f'User agent: {response.request.headers["User-Agent"]}')
-    #     logger.info(f'User agent: {response.request.headers["User-Agent"]}')
+      logger.info(f'User agent: {response.request.headers["User-Agent"]}')
 
     def extract_number(self, texto):
         list_numbers =  [int(s) for s in texto.split() if s.isdigit()]
@@ -181,10 +170,8 @@ class MercadoLibreCrawler(CrawlSpider):
         if 'sold_quantity' in item.keys() and 'catalog_listing' in item.keys():
 
             sold_quantity = item['sold_quantity']
-            #logger.info(f'sold_quantity {sold_quantity}. Source: catalog_listing')
 
         else:
-            #sold_quantity = item['sold_quantity']
             try:
 
                 link=requests.get(item['permalink'])
@@ -196,17 +183,14 @@ class MercadoLibreCrawler(CrawlSpider):
                 if not sold_quantity:
 
                     sold_quantity = item['sold_quantity']
-                    #logger.info(f'sold_quantity {sold_quantity}. Source: scrape none')
 
                 else:
                     pass
 
-                    #logger.info(f'sold_quantity {sold_quantity}. Source: scrape success')
 
             except:
 
                 sold_quantity = 0
-                #logger.info(f'sold_quantity {sold_quantity}. Source: scrape excpetion')
 
         return sold_quantity
 
@@ -284,7 +268,6 @@ class MercadoLibreCrawler(CrawlSpider):
             if time() - self.start_time > 20000:
                     logger.info(f"ACCESS TOKEN {self.ACCESS_TOKEN} about to expire")
                     logger.info(f"REFRESH TOKEN {self.REFRESH_TOKEN} about to expire")
-                    #ACCESS_TOKEN, REFRESH_TOKEN = refresh_token(CLIENT_ID, SECRET_KEY, REFRESH_TOKEN)
 
                     response = refresh_token(CLIENT_ID, SECRET_KEY, self.REFRESH_TOKEN)
                     logger.info(response)
@@ -303,12 +286,6 @@ class MercadoLibreCrawler(CrawlSpider):
                 break
 
             try:
-
-                #if 'message' in r.keys() and r['message'] == 'Invalid token':
-                #    logger.info('ACCESS TOKEN expired')
-                #    ACCESS_TOKEN, REFRESH_TOKEN = refresh_token(CLIENT_ID, SECRET_KEY, REFRESH_TOKEN)
-                #    logger.info(f'New ACCESS TOKEN: {ACCESS_TOKEN}')
-                #    r = self.seller_partial_info(seller_id, i)
                 
                 r = self.seller_partial_info(seller_id, i)
 
@@ -334,7 +311,6 @@ class MercadoLibreCrawler(CrawlSpider):
                 seller_results += r['results']
                 old_len_results = len_results
                 len_results = len(seller_results)
-                #logger.info(f'Appending {len_results} resultados del {seller_id}')
 
                 if len_results == old_len_results:
                     break
@@ -344,7 +320,6 @@ class MercadoLibreCrawler(CrawlSpider):
 
             except:
                 count += 1
-                #logger.info(f'Intento {count} fallido')
 
 
         if not seller_info['data']:
@@ -388,18 +363,6 @@ class MercadoLibreCrawler(CrawlSpider):
 
 
 
-def run():
-
-    logger.info(f'Se iniciara la descarga en {output_file}')
-    SETTINGS['FEEDS'] = {'file:///' + str(output_file): {'format': 'jsonlines'}}
-    logger.info(SETTINGS['FEEDS'])
-
-    logger.info(f"Crawling {NCATS} categories starting from {FROM}")
-
-
-    process = CrawlerProcess(settings=SETTINGS)
-    process.crawl(MercadoLibreCrawler)
-    process.start()
 
 def crawl():
 
