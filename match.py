@@ -31,18 +31,10 @@ logger = get_logger('PROCESS', logs_path / 'matching_{:%Y-%m-%d}.log'.format(dat
 VISITED_MATCHED = get_visited(output_path)
 logger.info(f'Se ha matcheado {len(VISITED_MATCHED)} vendedores')
 
-# def tail(stream_file):
-#     """ Read a file like the Unix command `tail`.
-#     Code from https://stackoverflow.com/questions/44895527/reading-infinite-stream-tail """
-#     logger.info(f'Streamming {stream_file}')
-#     #stream_file.seek(0, os.SEEK_END)  # Go to the end of file
-#     stream_file.seek(0, os.SEEK_SET)  # Go to the beginning of file
-#     while not stream_file.closed:
-#         line = stream_file.readline()
-#         yield line
 
 def tail(stream_file):
     logger.info(f'Streamming {stream_file}')
+
     """ Read a file like the Unix command `tail`. Code from https://stackoverflow.com/questions/44895527/reading-infinite-stream-tail """
     stream_file.seek(0, os.SEEK_END)  # Go to the end of file
 
@@ -50,17 +42,17 @@ def tail(stream_file):
         if stream_file.closed:
             logger.info(f'File {stream_file} closed')
             raise StopIteration
-            #sys.exit(exitCodeYouFindAppropriate)
 
         line = stream_file.readline()
 
         yield line
 
 def log_to_db(log_path, db):
+
     """ Read log (JSON format) and insert data in db """
     if os.path.isfile(match_path) and os.access(match_path, os.R_OK):
-        # checks if file exists
 
+        # checks if file exists
         old_match_data = []
         with open(match_path, "r") as match_file:
             for line in match_file:
@@ -88,7 +80,6 @@ def log_to_db(log_path, db):
             ))
             db_file.write('\n')
 
-            #VISITED_MATCHED = []
 
     with open(match_path, "r+") as match_file: # r+ o a ?
 
@@ -103,6 +94,7 @@ def log_to_db(log_path, db):
                     log_data = json.loads(line)
 
                 except ValueError:
+                    
                     # Bad json format, maybe corrupted...
                     continue  # Read next line
 

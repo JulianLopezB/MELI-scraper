@@ -50,8 +50,7 @@ def get_visited(dir_output):
             pass
 
     logger.info(f"Se han descargado info de {len(data)} sellers")
-    #string = 'SELLERS descargados: \n' + '\n'.join([str(x) for x in data])
-    #logger.info(f"{string}")
+
     return data
 
 
@@ -81,7 +80,6 @@ def getStartingUrls(file_urls, start, n_cat):
 
     for url in start_urls:
         domain = re.findall(r"\w+:?(?=.)", url)[1]
-        #if domain not in ['vehiculos', 'motos']:
         domain_url = domain + '.mercadolibre.com.ar'
         if domain_url not in allowed_domains:
             allowed_domains.append(domain_url)
@@ -141,13 +139,6 @@ def refresh_token(CLIENT_ID, SECRET_KEY, REFRESH_TOKEN):
     try:
 
         response = requests.post('https://api.mercadolibre.com/oauth/token', headers=headers, data=data).json()
-
-        # if not 'error' in response.keys():
-        #     ACCESS_TOKEN = response['access_token']
-        #     REFRESH_TOKEN = response['refresh_token']
-        # else:
-        #     logger.info(f"{response['message']}")
-        #     raise ValueError(f"{response['message']}")
      
 
     except requests.exceptions.RequestException as e:  # This is the correct syntax
@@ -156,6 +147,5 @@ def refresh_token(CLIENT_ID, SECRET_KEY, REFRESH_TOKEN):
         raise SystemExit(e)
 
 
-    #return ACCESS_TOKEN, REFRESH_TOKEN
     return response
 
