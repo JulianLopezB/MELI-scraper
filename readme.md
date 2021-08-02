@@ -1,5 +1,11 @@
 # MELI Scraper + CUIT fuzzy matching
 
+
+To Do:
+
+- Test
+- Upload to VM
+
 <p float="center">
   <img src="static/logo.png"/>
 </p>
